@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_junto.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <title>Descarga nuestra app</title>
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <div class="navegacion_container">
+      <header>
+        <nav>
+          <div class="navegacion_icon">
+            <img class= "test_index_2" src="img/navegacion_burger.png" />
+          </div>
+          <a href="index.html" class="navegacion_link_menu"><div class="navegacion_menu" >Inicio</div></a>
+          <a href="clubes.html" class="navegacion_link_menu"><div class="navegacion_menu">Clubs</div></a>
+          <a href="contacto.html" class="navegacion_link_menu"><div class="navegacion_menu">Contacto</div></a>
+          <a href="downloadAPP.html" class="navegacion_link_menu"><div class="navegacion_menu">App móvil</div></a>
+          <a href="login.html" class="navegacion_link_menu"><div class="navegacion_menu">Login</div></a>
+        </nav>
+      </header>
+    </div>
+    <div class="navegacion_logo">
+      <img class="navegacion_logouem" src="img/logo.svg" alt="" />
+    </div>
+
+    <!-- IMPORTANTE: COPIAR SCRIPT DEL HEAD-->
+    <script>
+      /* Icono del menu. Vamos a darle funcionalidad para hacer que se oculte o aparezca según el tamaño de la ventana */
+      $(function () {
+        /* Captura del evento para mostrar u ocultar el menu */
+        $(".navegacion_icon").click(function () {
+          $(".navegacion_menu").toggle();
+        });
+
+        $(window).resize(function () {
+          var anchura = $(this).width();
+          if (anchura > 900) {
+            $(".navegacion_menu").show();
+          }
+        });
+      });
+    </script>
+    <!-- FIN BARRA NAVEGACIÓN-->
+  <div class="app_contenedor_medio">
+    <div class="app_video">
+      <div class="app_cortina"></div>
+      <video
+        src="videos/ClubsPresentacion.mp4"
+        autoplay
+        class="app_videoGrande"
+        loop
+        muted
+      ></video>
+    </div>
+    <img src="img/opcion1.png" class="app_imagen" alt="" />
+    <a
+      href="https://play.google.com/store/apps/details?id=com.instructure.candroid&hl=es&gl=US"
+     target="_blank">
+      <img src="img/android.png" alt="" id="android_app" />
+    </a>
+    <a href="https://apps.apple.com/ar/app/canvas-student/id480883488" target="_blank">
+      <img src="img/ios.png" alt="" id="ios_app" />
+    </a>
+    <div id="app_descarganos">
+      <p>¡Descarga nuestra app gratuita!</p>
+    </div>
+  </div>
+      <!-- FOOTER -->
+       <footer>
+        <div class="contenedorfooter">
+          <div class="espaciosfooter">
+            <img class="logofooter" src="/img/logo.svg" alt="" />
+            <p class="textofooter1">
+              Lorem, ipsum asdasdasdadadasdasdasdasdolor sit amet consectetur
+              adipisicing elit. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Voluptates temporibus quidem deserunt corporis
+              vero blanditiis earu
+            </p>
+            <br />
+  
+            <h3 class="h3footer">¿Necesitas ayuda?</h3>
+            <br />
+            <p class="textofooter2">
+              Dejamos a tu disposicion nuestra pagina de
+              <a class="contactofooter" href="#">contacto</a> para cualquier duda,
+              sugerencia o inquietud que podamos resolver para los usuarios de
+              nuestra plataforma, ¡no dudes en contactarnos!
+            </p>
+          </div>
+          <div class="espaciosfooterG">
+            <br />
+            <h3 class="h3footerc">Clubes de interés</h3>
+            <br />
+            <div class="galeriafooter">
+              <div class="columna">
+                <img
+                  class="imagenfooter"
+                  src="/logos/LOGOS/VECTORIZADOS/phyxs-logo-club-madrid-400x225.svg"
+                  alt=""
+                />
+                <img
+                  class="imagenfooter"
+                  src="/logos/LOGOS/VECTORIZADOS/pride.svg"
+                  alt=""
+                />
+              </div>
+              <div class="columna">
+                <img
+                  class="imagenfooter"
+                  src="/logos/LOGOS/VECTORIZADOS/ue-e-sports-group.svg"
+                  alt=""
+                />
+                <img
+                  class="imagenfooter"
+                  src="/logos/LOGOS/VECTORIZADOS/robotics.svg"
+                  alt=""
+                />
+              </div>
+              <div class="columna">
+                <img
+                  class="imagenfooter"
+                  src="/logos/LOGOS/VECTORIZADOS/club-teatro-la-tarantella-uem-logo.svg"
+                  alt=""
+                />
+                <img
+                  class="imagenfooter"
+                  src="/logos/LOGOS/VECTORIZADOS/cludeciencias3.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+  
+            <h3 class="h3footer">Redes Sociales</h3>
+            <br /><br />
+            <div class="footer_redescociales">
+              <img
+                src="/logos/LOGOS/redes sociales/linkedin.png"
+                alt=""
+                class="footer_icono_redes_sociales"
+              />
+              <img
+                src="/logos/LOGOS/redes sociales/instagram.png"
+                alt=""
+                class="footer_icono_redes_sociales"
+              />
+              <img
+                src="/logos/LOGOS/redes sociales/facebook.png"
+                alt=""
+                class="footer_icono_redes_sociales"
+              />
+              <img
+                src="/logos/LOGOS/redes sociales/gorjeo.png"
+                alt=""
+                class="footer_icono_redes_sociales"
+              />
+              <img
+                src="/logos/LOGOS/redes sociales/youtube.png"
+                alt=""
+                class="footer_icono_redes_sociales"
+              />
+            </div>
+          </div>
+  
+          <div class="espaciosfooterfinal">
+            <h3 class="h3footer">Etiquetas</h3>
+            <br />
+            <p class="textofooter2">
+              #Diseño #Interiores #Exteriores #FotoRealismo #3d #ArchViz
+              #Arquitectura #VisualizaciónArquitectónica #Entornos #Render
+              #Infografías #VisitaVirtual #Retail #Plantas 3d #ObraCivil
+              #ObraPública
+            </p>
+            <br />
+  
+            <h3 class="h3footer">Aviso legal</h3>
+            <br />
+            <p class="textofooter2">
+              Ante cualquier inquietud no dudes en consultas nuestras paginas
+              sobre
+              <a href="#" class="contactofooter"
+                >Condiciones y politicas de privacidad</a
+              >
+            </p>
+          </div>
+        </div>
+        <br />
+      </footer> 
+  </body>
+</html>

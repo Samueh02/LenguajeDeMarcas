@@ -1,0 +1,756 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Hellix-Bold;
+}
+@font-face {
+  font-family: "Hellix-regular";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+  font-family: "Hellix-Bold";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/** BODY CLUBS */
+.clubs_body {
+  background: url(img/clubs_img.jpg);
+  margin: 0;
+}
+
+/** BARRA DE NAVEGACIÓN */
+.navegacion_container {
+  position: absolute;
+  overflow: hidden;
+  height: 40px;
+  width: 100%;
+  background-color: #fc2922;
+  display: inline-block;
+  z-index: 10;
+}
+
+.navegacion_menu {
+  display: none;
+  position: relative;
+  text-align: center;
+  padding: 1.5vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.navegacion_menu:hover {
+  background-color: #240504a4;
+  cursor: pointer;
+}
+a.navegacion_link_menu {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.navegacion_logo {
+  position: relative;
+  width: 20%;
+  z-index: 100;
+  right: -77vw;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.navegacion_logouem {
+  width: 100px;
+  float: right;
+}
+
+/* MEDIA QUERY BARRA DE NAVEGACIÓN */
+@media screen and (min-width: 900px) {
+  nav {
+    display: flex;
+  }
+  .navegacion_menu {
+    display: inline-block;
+  }
+  .navegacion_icon {
+    display: none;
+    position: relative;
+  }
+  .navegacion_container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navegacion_container {
+    overflow: visible;
+  }
+  nav {
+    background-color: #fc2922b4;
+    width: 20%;
+    margin-top: 1.1%;
+  }
+  .navegacion_menu {
+    text-align: center;
+    margin-left: 0vh;
+    margin-right: 0vh;
+  }
+
+  a.navegacion_link_menu {
+    font-size: 2vw;
+  }
+  .navegacion_logouem {
+    margin-right: 5%;
+    width: 100px;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+      margin-top: 1.7%;
+    }
+    .navegacion_logouem {
+      margin-top: 10%;
+      margin-right: 5%;
+      width: 60px;
+
+    }
+  }
+}
+
+/* FIN BARRA DE NAVEGACIÓN */
+
+/** VÍDEO PRESENTACIÓN */
+.clubs_video {
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.clubs_app_cortina {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clubs_videoGrande {
+  height: 120vh;
+}
+
+/** CARTEL PRESENTACIÓN CLUBS */
+.clubs_presentacion {
+  text-align: center;
+  color: rgba(255, 255, 255);
+  font-size: 4.5em;
+  text-shadow: 0px 0px 20px rgb(0, 0, 0);
+  position: relative;
+}
+
+/** PRESENTACIÓN CLUBS TECNOLOGIA */
+.clubs_banners_1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  width: 60%;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: url(img/clubs_bannerInformatica.png) bottom no-repeat;
+}
+.clubs_banners_1 p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-size: 3em;
+  text-align: center;
+}
+/** PRESENTACIÓN CLUBS DEPORTE */
+.clubs_banners_2 {
+  position: relative;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: url(img/clubs_bannerDeporte.jpg) bottom no-repeat;
+}
+.clubs_banners_2 p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-size: 3em;
+  text-align: center;
+}
+/** PRESENTACIÓN CLUBS CIENCIAS */
+.clubs_banners_3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  width: 60%;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: url(img/clubs_bannerCiencias.png) bottom no-repeat;
+}
+.clubs_banners_3 p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-size: 3em;
+  text-align: center;
+}
+/** PRESENTACIÓN CLUBS SOCIALES */
+.clubs_banners_4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+
+  width: 60%;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: url(img/clubs_bannerSocial.png) center no-repeat;
+}
+.clubs_banners_4 p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-size: 3em;
+  text-align: center;
+}
+
+/** TARJETAS CLUBS */
+.clubs_cuerpo {
+  margin-top: -4%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 60vh;
+  justify-content: center;
+}
+
+/* PROPIEDADES CARTAS */
+.clubs_tarjetas {
+  width: 20em;
+  height: 22em;
+  margin: 3em;
+  position: relative;
+  font-family: "Droid Serif", serif;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.4s;
+  background-size: 197%;
+}
+#clubs_1 {
+  background: url(img-clubs/gamestudio_pvxVU59.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_2 {
+  background: url(img-clubs/logo_kinespana.2e16d0ba.fill-400x224.jpg) center
+    no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_3 {
+  background: url(img-clubs/ue-mun.2e16d0ba.fill-400x224.jpg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_4 {
+  background: url(img-clubs/formula.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_5 {
+  background: url(img-clubs/pride.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_6 {
+  background: url(img-clubs/robotics.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_7 {
+  background: url(img-clubs/airdiv.jpg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_8 {
+  background: url(img-clubs/club-rol-uem.svg) center no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_9 {
+  background: url(img-clubs/asociacion-odontologica-club-madri.2e16d0ba.fill-400x224.jpg)
+    center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_10 {
+  background: url(img-clubs/phyxs-logo-club-madrid-400x225.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_11 {
+  background: url(img-clubs/criptoclub.svg) center no-repeat;
+  background-size: 160%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_12 {
+  background: url(img-clubs/ue-e-sports-group.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_13 {
+  background: url(img-clubS/club-teatro-la-tarantella-uem-logo.svg) center
+    no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_14 {
+  background: url(img-clubs/chess-club-uem-logo.2e16d0ba.fill-400x224.jpg)
+    center no-repeat;
+  background-size: 137%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_15 {
+  background: url(img-clubS/club-fotografia-uem-logo.2e16d0ba.fill-400x224.jpg)
+    center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_16 {
+  background: url(img-clubS/irc-club.2e16d0ba.fill-400x224.jpg) center no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_17 {
+  background: url(img-clubS/cinema-club.svg) center no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_18 {
+  background: url(img-clubS/medicina.2e16d0ba.fill-400x224.jpg) center no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_19 {
+  background: url(img-clubS/uepsa.svg) center no-repeat;
+  background-size: 217%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_20 {
+  background: url(img-clubS/cludeciencias3.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_21 {
+  background: url(img-clubs/club-informatica.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_22 {
+  background: url(img-clubS/dentalife-logo-club-madrid-400x225.svg) center
+    no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_23 {
+  background: url(img-clubS/uev-running-club.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_24 {
+  background: url(img-clubs/workout.jpg) center no-repeat;
+  background-size: 187%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_25 {
+  background: url(img-clubs/club-realmadrid) center no-repeat;
+  background-size: 90%;
+  background-color: rgb(255, 255, 255);
+}
+
+/* propiedades elementos a */
+.clubs_tarjetas a {
+  line-height: 2.5em;
+  /* background-color:rgba(0, 0, 0, 0.489); */
+  text-align: center;
+  width: 100%;
+  height: 2.5em;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.clubs_tarjetas .clubs_color_overlay {
+  background: rgba(110, 109, 109, 0.4);
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.clubs_tarjetas .clubs_gradient_overlay {
+  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.9) 21%);
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  z-index: 15;
+}
+
+/* DIFUMINADO DE LA CARTA */
+.clubs_tarjetas:hover {
+  box-shadow: 0px 18px 40px -9px rgba(0, 10, 30, 0.75);
+}
+.clubs_tarjetas:hover .clubs_card_info {
+  opacity: 1;
+  bottom: 50px;
+}
+.clubs_tarjetas:hover .clubs_color_overlay {
+  background: rgba(91, 91, 98, 0.8);
+}
+
+/* MUEVE EL TEXTO */
+.clubs_tarjetas:hover .clubs_titulo {
+  margin-top: -280px;
+}
+
+.clubs_titulo {
+  text-align: center;
+  margin: 100px 0 0 0;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.6s;
+}
+
+/* EFECTOS INTERIOR */
+
+.clubs_tarjetas:hover h3:after {
+  animation: changeLetter 0.3s 1 linear;
+  width: 100%;
+}
+
+/* TAMAÑO NOMBRE CLUB */
+.clubs_tarjetas h3 {
+  margin-left: 13px;
+  font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Abril Fatface", serif;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+.clubs_tarjetas h3 a {
+  text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.clubs_tarjetas h3 a:hover {
+  text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+/* BARIITA DEL MEDIO */
+
+.clubs_card_info h3:after {
+  content: " ";
+  display: block;
+  width: 10%;
+  height: 2px;
+  margin: 0px auto;
+  border: 0;
+  background: #ff0000;
+  transition: all 0.2s;
+}
+
+/* TEXTO DE ATRAS */
+
+.clubs_card_info {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  bottom: -0px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-style: 16px;
+  line-height: 24px;
+  z-index: 20;
+  opacity: 0;
+  transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.clubs_card_info p {
+  width: 100%;
+  text-align: justify;
+  position: relative;
+}
+
+/* BOTON DE APUNTARSE */
+.clubs_card_info a {
+  position: relative;
+
+  display: block;
+  width: 100px;
+  margin: 5px auto;
+  background: #fff;
+  color: #444;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+.clubs_card_info a:hover {
+  background: #ec4444;
+  color: #fff;
+}
+.clubs_card_info a:hover span {
+  filter: brightness(10);
+  opacity: 1;
+}
+.clubs_utility_info {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  text-align: left;
+}
+.clubs_utility_info:after {
+  content: " ";
+  display: block;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+  width: 30px;
+  height: 15px;
+}
+
+.clubs_utility_info a:hover {
+  text-decoration: underline;
+}
+.clubs_utility_list {
+  list-style-type: none;
+  margin: 0px 0 -1000px 110px;
+  padding: 0;
+  width: 100%;
+}
+
+.clubs_utility_list li {
+  padding: 3px 0 15px 0px;
+  font-size: 0.9em;
+  margin-left: -25%;
+}
+
+.clubs_utility_list li p {
+  margin-top: -8%;
+  margin-left: 9%;
+}
+
+.clubs_hashtags {
+  margin: 2.845vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#clubs_primero {
+  position: relative;
+  color: black;
+  top: 138px;
+  left: -20px;
+  padding: 5px;
+  font-size: 10px;
+  box-shadow: 0px 2px 6px #000;
+  background-color: #f3f3f3;
+}
+
+#clubs_segundo {
+  position: relative;
+  color: black;
+  top: 138px;
+  padding: 5px;
+  font-size: 10px;
+  box-shadow: 0px 2px 6px #000;
+  background-color: #f3f3f3;
+}
+#clubs_tercero {
+  position: relative;
+  color: black;
+  left: 20px;
+  top: 138px;
+  padding: 5px;
+  font-size: 10px;
+  box-shadow: 0px 2px 6px #000;
+  background-color: #f3f3f3;
+}
+
+/** FOOTER */
+
+.contenedorfooter {
+  position: relative;
+  width: 100%;
+  background-color: rgb(59, 53, 53);
+  display: inline-flex;
+  text-align: center;
+  padding-bottom: 15px;
+  bottom: 0;
+}
+.espaciosfooter {
+  padding-top: 1%;
+  width: 33%;
+}
+.logofooter {
+  width: 20%;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #fc2922;
+}
+.textofooter1 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.h3footer {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.textofooter2 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.espaciosfooterG {
+  padding-top: 1%;
+  width: 33%;
+}
+.h3footerc {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.contactofooter {
+  text-decoration: none;
+  color: white;
+  font-family: "Hellix-Regular";
+}
+.imagenfooter {
+  height: 2.4em;
+  margin-bottom: 3px;
+}
+.galeriafooter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.columna {
+  margin: 0px 3px;
+  width: 25%;
+  height: 40%;
+}
+
+.redessociales {
+  display: inline-block;
+}
+.footer_icono_redes_sociales {
+  padding: 0% 3%;
+}
+
+.espaciosfooterfinal{
+  width: 33%;
+}
+@media screen and (max-width: 1000px) {
+  .contenedorfooter {
+    flex-wrap: wrap;
+    padding-top: 3%;
+  }
+  .espaciosfooterfinal{
+    visibility: hidden;
+    margin-top: -60%;
+  }
+  .espaciosfooter{
+    width: 100%;
+  }
+  .espaciosfooterG{
+    width: 100%;
+  }
+  .espaciosfooterfinal{
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding-top: 10%;
+  }
+}
+
+/* FIN FOOTER */
+
+/* MOVIL */
+
+@media screen and (max-width: 1024px) {
+  .clubs_presentacion {
+    font-size: 2.3em;
+  }
+  .clubs_banners_1 p {
+    font-size: 1.4em;
+  }
+  .clubs_banners_2 p {
+    font-size: 1.5em;
+  }
+  .clubs_banners_3 p {
+    font-size: 1.4em;
+  }
+  .clubs_banners_4 p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clubs_presentacion {
+    font-size: 1.3em;
+  }
+}

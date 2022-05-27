@@ -1,0 +1,614 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Hellix-Bold;
+}
+@font-face {
+  font-family: "Hellix-regular";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+  font-family: "Hellix-Bold";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/** BARRA DE NAVEGACIÓN */
+.navegacion_container {
+  position: absolute;
+  overflow: hidden;
+  height: 40px;
+  width: 100%;
+  background-color: #fc2922;
+  display: inline-block;
+  z-index: 10;
+}
+
+.navegacion_menu {
+  position: relative;
+  text-align: center;
+  padding: 1.5vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.navegacion_menu:hover {
+  background-color: #240504a4;
+  cursor: pointer;
+}
+a.navegacion_link_menu {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.navegacion_logo {
+  position: relative;
+  width: 20%;
+  z-index: 100;
+  right: -77vw;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.navegacion_logouem {
+  width: 100px;
+  float: right;
+}
+
+/* MEDIA QUERY BARRA DE NAVEGACIÓN */
+@media screen and (min-width: 900px) {
+  nav {
+    display: flex;
+  }
+  .navegacion_menu {
+    display: inline-block;
+  }
+  .navegacion_icon {
+    display: none;
+    position: relative;
+  }
+  .navegacion_container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navegacion_container {
+    overflow: visible;
+  }
+  nav {
+    background-color: #fc2922b4;
+    width: 20%;
+    margin-top: 1.1%;
+  }
+  .navegacion_menu {
+    text-align: center;
+    margin-left: 0vh;
+    margin-right: 0vh;
+  }
+
+  a.navegacion_link_menu {
+    font-size: 2vw;
+  }
+  .navegacion_logouem {
+    margin-right: 5%;
+    width: 100px;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+      margin-top: 1.7%;
+    }
+    .navegacion_logouem {
+      margin-top: 10%;
+      margin-right: 5%;
+      width: 60px;
+    }
+  }
+}
+
+/* Banner */
+.divprincipal_club {
+  text-align: center;
+  position: relative;
+  max-width: 100vw;
+  height: 17vw;
+  background-image: url(img/1j8a0401web.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* texto banner */
+.tituloPRI_club {
+  position: relative;
+  color: white;
+  font-size: 5vw;
+  top: 5vw;
+  text-shadow: 4px 2px black;
+}
+/* lineas del titulo princcipal */
+.line1 {
+  position: absolute;
+  width: 30%;
+  top: 8.5vw;
+  background-color: white;
+  border: 0.15vw white solid;
+  z-index: 10;
+}
+.line2 {
+  left: 68.5vw;
+  position: absolute;
+  top: 8.5vw;
+  width: 30%;
+  background-color: white;
+  border: 0.15vw white solid;
+}
+
+.contenedorgeneral_club {
+  position: absolute;
+}
+.contenedorVerticales_club {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* background-color: green; */
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+}
+/* Cuadro izquierdo */
+
+.divvertical1_club {
+  position: relative;
+  right: 1vw;
+  width: 40vw;
+  padding: 1%;
+}
+
+#tituloINFO_club {
+  position: absolute;
+  font-size: 2vw;
+  top: 2vw;
+}
+.lineaINFO_club {
+  position: relative;
+  color: #fc2922;
+  background-color: #fc2922;
+  top: 1.5vw;
+  border: #fc2922 0.06vw solid;
+  z-index: 2;
+}
+#textoINFO_club {
+  position: relative;
+  font-size: 1vw;
+  top: 2vw;
+  text-align: justify;
+}
+
+/* logo banner */
+.circulo_club {
+  /* background-color: red; */
+  top: 2vw;
+  position: relative;
+  height: 22vh;
+  width: 14vw;
+  float: right;
+  z-index: 20;
+  margin-left: 1vw;
+  /* overflow: hidden; */
+}
+#logoTEXT_club {
+  position: relative;
+  width: 33vw;
+  height: 33vw;
+  left: -9vw;
+  top: -10vw;
+}
+
+/* Info con iconos */
+#cuadrito1_club {
+  position: relative;
+  /* background-color: #fc2922; */
+  height: 3%;
+  width: 37%;
+  margin-bottom: 5vh;
+  float: left;
+}
+#cuadrito2_club {
+  position: relative;
+  /* background-color: aqua; */
+  height: 3%;
+  width: 40%;
+  margin-bottom: 5vh;
+  float: left;
+  left: 8vw;
+}
+#cuadrito3_club {
+  position: relative;
+  /* background-color: blueviolet; */
+  height: 3%;
+  width: 37%;
+  margin-bottom: 5vh;
+  float: left;
+}
+#cuadrito4_club {
+  position: relative;
+  /* background-color: yellow; */
+  left: 8vw;
+  height: 3%;
+  width: 37%;
+  margin-bottom: 5vh;
+  float: left;
+}
+#cuadrito5_club {
+  position: relative;
+  /* background-color: purple; */
+  height: 3%;
+  width: 37%;
+  margin-bottom: 5vh;
+  float: left;
+}
+#cuadrito6_club {
+  position: relative;
+  /* background-color: brown; */
+  height: 3%;
+  width: 38%;
+  margin-bottom: 5vh;
+  float: left;
+  left: 8vw;
+}
+#cuadrito7_club {
+  position: relative;
+  background-color: black;
+  height: 3%;
+  width: 37%;
+  margin-bottom: 5vh;
+  float: left;
+}
+#cuadrito8_club {
+  position: relative;
+  background-color: goldenrod;
+  height: 3%;
+  width: 37%;
+  margin-bottom: 5vh;
+  float: left;
+  left: 10vw;
+}
+
+.caract_club {
+  display: inline-block;
+  position: relative;
+  height: 30vh;
+  top: 6vh;
+}
+
+.imgIZQ_club {
+  height: 2vw;
+  width: 2vw;
+  float: left;
+  position: absolute;
+}
+.textoICON_club {
+  font-size: 1vw;
+  position: relative;
+  left: 3vw;
+  /* color: #fc2922; */
+}
+
+/* Cuadro derecho */
+.divvertical2_club {
+  position: relative;
+  width: 40vw;
+  right: -1vw;
+  /* background-color: blue; */
+  text-align: center;
+  padding: 0%;
+}
+#titulojoin_club {
+  position: relative;
+  top: 2vh;
+  font-size: 2.5vw;
+}
+
+#textojoin_club {
+  position: relative;
+  top: 2vh;
+  font-size: 1vw;
+}
+/* formulario */
+.formulario_club {
+  position: relative;
+  top: 3vh;
+  background-color: rgba(169, 169, 169, 0.3);
+  height: 90%;
+}
+
+.rellenoformulario_club {
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  overflow: hidden;
+  margin-left: 2vw;
+  /* background-color:#fc29221f; */
+}
+.rellenoformulario_club input {
+  position: relative;
+  background-color: white;
+  height: 8%;
+  width: 40%;
+  margin-bottom: 2vh;
+  padding: 1%;
+  font-size: 1vw;
+  text-align: center;
+  border: none;
+  outline: none;
+  overflow: scroll;
+}
+
+.rellenoformulario_club input:hover {
+  box-shadow: 0px 0px 0px 1px #fc2922;
+}
+/* campos del formulario */
+
+#mailform_club {
+  width: 83%;
+  text-align: center;
+}
+#masFORM_club {
+  width: 15%;
+  text-align: center;
+  left: -1.3vw;
+}
+#movilFORM_club {
+  position: relative;
+  width: 57%;
+  left: 1.5vw;
+  text-align: center;
+}
+
+#textogrande_club {
+  height: 20%;
+  width: 82.4%;
+}
+
+/* botón de enviar solicitud */
+.ENVIAR_club {
+  position: relative;
+  background-color: #fc2922;
+  border: 1px #fc2922 solid;
+  height: 10%;
+  width: 11vw;
+  color: white;
+  top: 2vh;
+  left: 2.7vw;
+  font-size: 1vw;
+}
+
+.ENVIAR_club:hover {
+  color: #fc2922;
+  background-color: white;
+}
+
+/* Aceptar términos */
+#casilladerechos_club {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  left: -3.3vw;
+  height: 1.5vw;
+  z-index: 10;
+}
+#casilladerechos_club:hover {
+  box-shadow: none;
+}
+#textoCasilla_club {
+  position: relative;
+  font-size: 0.6vw;
+  left: -8.5vw;
+  text-align: justify;
+}
+
+/** FOOTER */
+
+.contenedorfooter {
+  position: relative;
+  width: 100%;
+  background-color: rgb(59, 53, 53);
+  display: inline-flex;
+  text-align: center;
+  padding-bottom: 15px;
+  bottom: 0;
+}
+.espaciosfooter {
+  padding-top: 1%;
+  width: 33%;
+}
+.logofooter {
+  width: 20%;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #fc2922;
+}
+.textofooter1 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.h3footer {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.textofooter2 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.espaciosfooterG {
+  padding-top: 1%;
+  width: 33%;
+}
+.h3footerc {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.contactofooter {
+  text-decoration: none;
+  color: white;
+  font-family: "Hellix-Regular";
+}
+.imagenfooter {
+  height: 2.4em;
+  margin-bottom: 3px;
+}
+.galeriafooter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.columna {
+  margin: 0px 3px;
+  width: 25%;
+  height: 40%;
+}
+
+.redessociales {
+  display: inline-block;
+}
+.footer_icono_redes_sociales {
+  padding: 0% 3%;
+}
+
+.espaciosfooterfinal {
+  width: 33%;
+}
+@media screen and (max-width: 1000px) {
+  .contenedorfooter {
+    flex-wrap: wrap;
+    padding-top: 3%;
+  }
+  .espaciosfooterfinal {
+    visibility: hidden;
+    margin-top: -60%;
+  }
+  .espaciosfooter {
+    width: 100%;
+  }
+  .espaciosfooterG {
+    width: 100%;
+  }
+  .espaciosfooterfinal {
+    width: 100%;
+  }
+}
+
+/* Móviles */
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .contenedorVerticales_club {
+    flex-wrap: wrap;
+  }
+
+  #casilladerechos_club {
+    height: 3vw;
+  }
+  #textoINFO_club {
+    font-size: 0.8vh;
+    top: 2vh;
+  }
+  #logoTEXT_club {
+    width: 60vw;
+    height: 60vw;
+    margin-left: -5vw;
+    top: -15vw;
+  }
+
+  #tituloINFO_club {
+    top: 4vh;
+    font-size: 1.5vh;
+  }
+
+  .divvertical1_club {
+    width: 51%;
+    top: -3vh;
+    /* overflow: hidden; */
+  }
+  img.imgIZQ_club {
+    height: 5vw;
+    width: 3vw;
+  }
+
+  .lineaINFO_club {
+    position: relative;
+    top: 1vh;
+    height: 0.005vh;
+    width: 140%;
+  }
+
+  p.textoICON_club {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    top: 1vh;
+  }
+  .divvertical2_club {
+    width: 60%;
+    top: -10vh;
+  }
+  p#textoCasilla_club {
+    font-size: 1vw;
+  }
+
+  input {
+    height: 5vh;
+  }
+  .formulario_club {
+    height: 80vw;
+    overflow: visible;
+  }
+
+  .rellenoformulario_club {
+    top: 1.5vh;
+    overflow: visible;
+    height: 80%;
+  }
+  .caract_club {
+    position: relative;
+    margin-left: 1vw;
+    height: 20vh;
+    top: -2vh;
+  }
+
+  .rellenoformulario_club input {
+    height: 3vw;
+  }
+
+  #textogrande_club {
+    height: 5vh;
+  }
+
+  #cuadrito2_club,
+  #cuadrito4_club,
+  #cuadrito6_club {
+    margin-left: 10vw;
+    width: 41%;
+  }
+}
+
+/* tablets */
+
+@media screen and (max-width: 1200px) {
+} 

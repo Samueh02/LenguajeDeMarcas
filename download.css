@@ -1,0 +1,342 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Hellix-Bold;
+}
+@font-face {
+  font-family: "Hellix-regular";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+  font-family: "Hellix-Bold";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+}
+/** BARRA DE NAVEGACIÓN */
+.navegacion_container {
+  position: absolute;
+  overflow: hidden;
+  height: 40px;
+  width: 100%;
+  background-color: #fc2922;
+  display: inline-block;
+  z-index: 10;
+}
+
+.navegacion_menu {
+  position: relative;
+  text-align: center;
+  padding: 1.5vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.navegacion_menu:hover {
+  background-color: #240504a4;
+  cursor: pointer;
+}
+a.navegacion_link_menu {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.navegacion_logo {
+  position: relative;
+  width: 20%;
+  z-index: 100;
+  right: -77vw;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.navegacion_logouem {
+  width: 100px;
+  float: right;
+}
+
+/* MEDIA QUERY BARRA DE NAVEGACIÓN */
+@media screen and (min-width: 900px) {
+  nav {
+    display: flex;
+  }
+  .navegacion_menu {
+    display: inline-block;
+  }
+  .navegacion_icon {
+    display: none;
+    position: relative;
+  }
+  .navegacion_container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navegacion_container {
+    overflow: visible;
+  }
+  nav {
+    background-color: #fc2922b4;
+    width: 20%;
+    margin-top: 1.1%;
+  }
+  .navegacion_menu {
+    text-align: center;
+    margin-left: 0vh;
+    margin-right: 0vh;
+  }
+
+  a.navegacion_link_menu {
+    font-size: 2vw;
+  }
+  .navegacion_logouem {
+    margin-right: 5%;
+    width: 100px;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+      margin-top: 2%;
+    }
+    .navegacion_logouem {
+      margin-top: 10%;
+      margin-right: 5%;
+      width: 60px;
+    }
+  }
+}
+
+/* FIN BARRA DE NAVEGACIÓN */
+/* fondo */
+.app_contenedor_medio {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.app_video {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-attachment: scroll;
+  background-color: aliceblue;
+}
+.app_videoGrande {
+  width: 100%;
+}
+.app_cortina {
+  background-color: black;
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  opacity: 0.5;
+}
+/* mockup */
+.app_imagen {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  height: 50%;
+  margin-top: 15vh;
+  margin-left: 50%;
+}
+/* Botón android */
+#android_app {
+  position: relative;
+  z-index: 2;
+  width: 15%;
+  height: 10%;
+  margin-left: 35vw;
+  margin-left: 14vw;
+  margin-top: -25vh;
+  margin-bottom: 10vh;
+}
+/* botón ios */
+#ios_app {
+  position: relative;
+  z-index: 2;
+  width: 15%;
+  height: 10%;
+  margin-left: 2vw;
+  margin-top: -25vh;
+  margin-bottom: 10vh;
+}
+
+/* Texto descárganos */
+#app_descarganos {
+  position: absolute;
+  /* background-color: #fc2922; */
+  width: 50vw;
+  text-align: center;
+  overflow: hidden;
+  height: 28vh;
+  z-index: 2;
+  font-size: 5vw;
+  margin-top: -57vh;
+  margin-left: 6vw;
+  margin-bottom: -50vh;
+  color: white;
+}
+/* Móviles */
+@media screen and (max-width: 600px) {
+  .app_contenedor_medio {
+    overflow: visible;
+  }
+}
+/* Tablets */
+@media screen and (max-width: 980px) {
+  .app_contenedor_medio {
+    height: 100vh;
+    margin-bottom: -10vw;
+    overflow: hidden;
+  }
+
+  .app_video {
+    width: 400vw;
+  }
+  .app_imagen {
+    margin-top: 25vh;
+    position: absolute;
+    width: 98%;
+    margin-left: 6%;
+  }
+
+  #app_descarganos {
+    position: absolute;
+    margin-top: 10vh;
+    font-size: 8vw;
+    margin-left: 9vw;
+    width: 80vw;
+  }
+
+  #android_app {
+    position: absolute;
+    margin-top: 75vh;
+    margin-left: 50vw;
+    width: 40%;
+  }
+
+  #ios_app {
+    position: absolute;
+    margin-top: 75vh;
+    margin-left: 8vw;
+    width: 40%;
+  }
+
+  .app_cortina {
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+/** FOOTER */
+
+.contenedorfooter {
+  position: relative;
+  width: 100%;
+  background-color: rgb(59, 53, 53);
+  display: inline-flex;
+  text-align: center;
+  padding-bottom: 15px;
+  bottom: 0;
+}
+.espaciosfooter {
+  padding-top: 1%;
+  width: 33%;
+}
+.logofooter {
+  width: 20%;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #fc2922;
+}
+.textofooter1 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.h3footer {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.textofooter2 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.espaciosfooterG {
+  padding-top: 1%;
+  width: 33%;
+}
+.h3footerc {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.contactofooter {
+  text-decoration: none;
+  color: white;
+  font-family: "Hellix-Regular";
+}
+.imagenfooter {
+  height: 2.4em;
+  margin-bottom: 3px;
+}
+.galeriafooter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.columna {
+  margin: 0px 3px;
+  width: 25%;
+  height: 40%;
+}
+
+.redessociales {
+  display: inline-block;
+}
+.footer_icono_redes_sociales {
+  padding: 0% 3%;
+}
+
+.espaciosfooterfinal {
+  width: 33%;
+}
+@media screen and (max-width: 1000px) {
+  .contenedorfooter {
+    flex-wrap: wrap;
+    padding-top: 3%;
+  }
+  .espaciosfooterfinal {
+    visibility: hidden;
+    margin-top: -60%;
+  }
+  .espaciosfooter {
+    width: 100%;
+  }
+  .espaciosfooterG {
+    width: 100%;
+  }
+  .espaciosfooterfinal {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding-top: 10%;
+  }
+}

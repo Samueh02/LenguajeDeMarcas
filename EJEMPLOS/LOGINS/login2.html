@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Apuntes16.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Web Responsive</title>
+</head>
+
+<body>
+    <!-- Container: Caja principal que contendrá todos los elementos de mi página web -->
+    <div class="container">
+        <!-- Header: Contendrá el título de la páguina web (e incluso puede tener un logo
+            y el menú de navegación representado en una etiqueta nav) -->
+        <header class="rojo">
+            <h1> Nuevo Bernabeu </h1>
+            <nav>
+                <div class="icon"><i class="fa fa-bars" style="font-size:24px"></i></div>
+                <div class="menu_item">Inicio</div>
+                <div class="menu_item">Proyectos</div>
+                <div class="menu_item">Contacto</div>
+            </nav>
+        </header>
+        <!-- Main: Caja que contendrá las secciones más importantes de mi web: imágenes, texto... -->
+        <main>
+            <section class="main_text">
+                <div>
+                    <h1 class="rojo"> Proyecto ejemplo Web responsive para 1º DAM</h1>
+                    <h3>Diseño Responsive</h3>
+                </div>
+                <p>Página web responsive creada durante una de nuestras clases de lenguaje de marcas.</p>
+                <p>Establecemos dos puntos de breakpoints , uno a 576px y otro a 922px.</p>
+                <p>Proceso desarrollado desde pantallas pequeñas hasta más grandes.</p>
+            </section>
+            <section class="images">
+                <img src="Icon/fila-1-columna-1.jpg" alt="">
+                <img src="Icon/fila-1-columna-2.jpg" alt="">
+                <img src="Icon/fila-1-columna-3.jpg" alt="">
+                <img src="Icon/fila-2-columna-1.jpg" alt="">
+                <img src="Icon/fila-2-columna-2.jpg" alt="">
+                <img src="Icon/fila-2-columna-3.jpg" alt="">
+                <img src="Icon/fila-3-columna-1.jpg" alt="">
+                <img class="hidden" src="Icon/fila-3-columna-2.jpg" alt="">
+                <img src="Icon/fila-3-columna-3.jpg" alt="">
+            </section>
+        </main>
+        <!-- Section: La caja que contendrá los artículos o noticias relevantes -->
+        <section class="novedades">
+            <h2 class="rojo"> Novedades </h2>
+            <article>
+                <h3> 23 de febrero del 20220</h3>
+                <h4> Información Ciclos DAM</h4>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facere, aliquid ullam quisquam ut
+                    cum blanditiis odio commodi aspernatur cupiditate magni, quae dolore beatae modi praesentium non
+                    nisi amet illo?</p>
+            </article>
+            <article>
+                <h3> 23 de febrero del 20220</h3>
+                <h4> Información Ciclos DAM</h4>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facere, aliquid ullam quisquam ut
+                    cum blanditiis odio commodi aspernatur cupiditate magni, quae dolore beatae modi praesentium non
+                    nisi amet illo?</p>
+            </article>
+            <article>
+                <h3> 23 de febrero del 20220</h3>
+                <h4> Información Ciclos DAM</h4>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facere, aliquid ullam quisquam ut
+                    cum blanditiis odio commodi aspernatur cupiditate magni, quae dolore beatae modi praesentium non
+                    nisi amet illo?</p>
+            </article>
+        </section>
+    </div>
+    <script>
+        /* Icono del menu. Vamos a darle funcionalidad para hacer que se oculte o aparezca según el tamaño de la ventana */
+        $(function () {
+            /* Captura del evento para mostrar u ocultar el menu */
+            $(".icon").click(function () {
+                $(".menu_item").toggle();
+            });
+            $(window).resize(function () {
+                var anchura = $(this).width();
+                if (anchura > 576) {
+                    $(".menu_item").show();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

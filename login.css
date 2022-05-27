@@ -1,0 +1,2866 @@
+/** CSS COMUN **/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Hellix-Bold;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #D9D9D9;
+
+}
+@font-face {
+  font-family: "Hellix-regular";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+  font-family: "Hellix-Bold";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+}
+/**TEST **/
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/** BARRA DE NAVEGACIÓN */
+.navegacion_container {
+  position: absolute;
+  overflow: hidden;
+  height: 40px;
+  width: 100%;
+  background-color: #fc2922;
+  display: inline-block;
+  z-index: 10;
+}
+
+.navegacion_menu {
+  display: none;
+  position: relative;
+  text-align: center;
+  padding: 1.5vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.navegacion_menu:hover {
+  background-color: #240504a4;
+  cursor: pointer;
+}
+a.navegacion_link_menu {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.navegacion_logo {
+  position: relative;
+  width: 20%;
+  z-index: 100;
+  right: -77vw;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.navegacion_logouem {
+  width: 100px;
+  float: right;
+}
+
+/* MEDIA QUERY BARRA DE NAVEGACIÓN */
+@media screen and (min-width: 900px) {
+  nav {
+    display: flex;
+  }
+  .navegacion_menu {
+    display: inline-block;
+  }
+  .navegacion_icon {
+    display: none;
+    position: relative;
+  }
+  .navegacion_container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navegacion_container {
+    overflow: visible;
+  }
+  nav {
+    background-color: #fc2922b4;
+    width: 20%;
+    margin-top: 1.1%;
+  }
+  .navegacion_menu {
+    text-align: center;
+    margin-left: 0vh;
+    margin-right: 0vh;
+  }
+
+  a.navegacion_link_menu {
+    font-size: 2vw;
+  }
+  .navegacion_logouem {
+    margin-right: 5%;
+    width: 100px;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+      margin-top: 1%;
+    }
+    .navegacion_logouem {
+      margin-top: 10%;
+      margin-right: 5%;
+      width: 60px;
+
+    }
+  }
+}
+
+/* FIN BARRA DE NAVEGACIÓN */
+
+/*FOOTER*/
+
+
+.contenedorfooter {
+  position: relative;
+  width: 100%;
+  background-color: rgb(59, 53, 53);
+  display: inline-flex;
+  text-align: center;
+  padding-bottom: 15px;
+  bottom: 0;
+}
+.espaciosfooter {
+  padding-top: 1%;
+  width: 33%;
+}
+.logofooter {
+  width: 20%;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #fc2922;
+}
+.textofooter1 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.h3footer {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.textofooter2 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.espaciosfooterG {
+  padding-top: 1%;
+  width: 33%;
+}
+.h3footerc {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.contactofooter {
+  text-decoration: none;
+  color: white;
+  font-family: "Hellix-Regular";
+}
+.imagenfooter {
+  height: 2.4em;
+  margin-bottom: 3px;
+}
+.galeriafooter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.columna {
+  margin: 0px 3px;
+  width: 25%;
+  height: 40%;
+}
+
+.redessociales {
+  display: inline-block;
+}
+.footer_icono_redes_sociales {
+  padding: 0% 3%;
+}
+
+.espaciosfooterfinal{
+  width: 33%;
+}
+@media screen and (max-width: 1000px) {
+  .contenedorfooter {
+    flex-wrap: wrap;
+    padding-top: 3%;
+  }
+  .espaciosfooterfinal{
+    visibility: hidden;
+    margin-top: -60%;
+  }
+  .espaciosfooter{
+    width: 100%;
+  }
+  .espaciosfooterG{
+    width: 100%;
+  }
+  .espaciosfooterfinal{
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding-top: 10%;
+  }
+}
+/*FIN FOOTER*/
+
+/** INDEX **/
+
+/*Inicio del div principal*/
+.index_clubs_app_cortina {
+  background-color: rgba(0, 0, 0, 0.336);
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  }
+.index_pantallaPrincipal{
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  background-image: url(/img/1.\ Index_Imagen_Principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px;
+}
+.index_textoPrincipal{
+  position: relative;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  top: 40%;
+  
+}
+.index_ap:hover{
+border: 1px solid rgb(255, 255, 255);
+background-color: #fc2922a4; 
+cursor: pointer;
+
+}
+.index_ap{
+padding-top: 3px;
+min-width:130px;
+letter-spacing: 0.4em;
+color: white;
+  position: relative;
+  top : 50%;
+  left: -15%;
+  width: 8%;
+  height: 5%;
+  border-radius: 7px;
+  border-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.63);
+  background-color: rgba(179, 41, 41, 0.397);
+}
+/* Fin del div principal*/
+/* Inicio de la parte de clubes y titulo*/
+.index_contener2{
+  text-align: center;
+}
+.index_galeriaclubs{
+  display: inline-block;
+  margin-top: 40px;
+  width: 80%;
+  height: 150px;
+  text-align: center;
+  background-position-y: 40%;
+  background-size: cover;
+  background-image: url(/img/2.Banner_Clubs.jpg);
+  background-repeat: no-repeat;
+  background-color: grey;
+}
+
+.index_Conoceclubs{
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+  height: 70%;
+  font-size: 1.8em;
+  width: 90%;
+}
+/*Fin del la seccion clubs*/
+/*inicio de la seccion de quotes*/
+
+.index_rubia_hermosa{
+  position: relative;
+  width: 22%;
+  height: 20%;
+  border-radius: 150px;
+  vertical-align: middle;
+}
+.index_rubia_hermosa3{
+  position: relative;
+  width: 22%;
+  height: 20%;
+  border-radius: 150px;
+  vertical-align: middle;
+}
+.index_rubia_hermosa2{
+  display: none;
+  position: relative;
+  width: 22%;
+  height: 20%;
+  border-radius: 150px;
+  vertical-align: middle;
+}
+.index_decoracion{
+  align-self: center;
+  border: 1px solid white;
+  width: 75%;
+  margin-left: 13% ;
+}
+.index_decoracion2{
+  align-self: center;
+  border: 1px solid white;
+  width: 75%;
+  margin-left: 13% ;
+}
+.index_pExp{
+  
+  line-height: 290%;
+  margin-left: 2%;
+  text-align: center;
+  position: relative;
+  display: inline-flexbox;
+  font-size: 24px;
+  color: white;
+  text-shadow: 0.3em 0.1em 1em rgba(0, 0, 0, 0.459);
+  vertical-align: middle;
+  height: 5%;
+  align-items: center;
+}
+.index_experiencia{
+  display: inline-flexbox;
+  text-align: center;
+  justify-content: center;
+  position: inherit;
+  margin-top:5%;
+}.index_contenedor_experiencia_alumnos2{
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+  height: 5%;  
+  flex-direction: row;
+
+  padding: 0px;
+  vertical-align: middle;
+  align-items: center;
+}
+.index_contenedor_experiencia_alumnos{
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+  height: 5%;  
+  flex-direction: row;
+
+  padding: 0px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.index_comillas{
+  position: relative;
+  font-size: 3em;
+  color:#ae2d19d7;
+
+}
+/*Fin del contenedor/seccion de quotes*/
+
+/** CONTENEDORES TARJETAS CLUBS */
+.index_slider_container{
+margin-top: -25px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  vertical-align: center;
+  overflow:scroll;
+}
+.index_slider_container::-webkit-scrollbar{
+background-color: rgba(0, 0, 0, 0.801);
+  width: 50%;
+  height: 15px;
+  display: double-button;
+}
+.index_slider_container::-webkit-scrollbar-thumb{
+background-color: rgba(255, 0, 0, 0.432);
+  border-radius: 4px;
+}
+.index_slider_container::-webkit-scrollbar-thumb:hover{
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.index_slider_container::-webkit-scrollbar-thumb:active{
+  background-color: #999999;
+}
+.index_slider_container::-webkit-scrollbar-button:horizontal:decrement{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 3px 4px 0px 0px;
+  
+}
+.index_slider_container::-webkit-scrollbar-button:horizontal:increment{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 3px 4px 0px 0px;
+  
+}
+.index_slider_container::-webkit-scrollbar-corner {
+background: #F2F2F2;
+border-top:1px solid #D9D9D9;
+border-left:1px solid #D9D9D9;
+}
+
+.index_bloque_contenedor_cartas{
+padding: 4em 3%;
+width: auto;
+background-color: rgba(0,0,0,0.8);
+
+}
+
+/*Inicio de la seccion de Actividades universitarias*/
+
+.index_actividades_universitarias{
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.index_proyecto_banner{
+
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+}
+
+#index_img_banner{
+  font-size: 34px;
+  line-height: 2;
+  letter-spacing: -0.045em;
+  font-weight: 100;
+  color: white;
+  text-shadow: 0.3em 0.1em 1em rgba(0, 0, 0, 0.884);
+  
+
+  background: url("logos/Imagenes/5. Index_Banner_Proyecto.jpg");
+  display: inline-flex;
+  text-align: left;
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 23vh;
+}
+
+
+.index_boxes{
+top: -6vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 23em;
+  position: relative;
+}
+.index_caja_contacta{
+  width: 55%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  padding: 3em
+  
+}
+.index_caja_contacta2{
+  width: 55%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  padding: 3em
+  
+}
+.index_caja_texto_contacta::-webkit-scrollbar{
+overflow-x: hidden;
+overflow-y: visible;
+}
+.index_caja_texto_contacta::-webkit-scrollbar:vertical{
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-flexbox;
+  height: 100%;
+}
+.index_caja_texto_contacta::-webkit-scrollbar-corner{
+background-color: rgba(0, 0, 0, 0);
+display: none;
+height: 0px;
+}
+.index_caja_texto_contacta::-webkit-scrollbar-thumb{
+background-color: rgba(255, 0, 0, 0.384);
+border-radius: 8px;
+}
+
+.index_caja_contacta  p{
+  position: relative;
+  font-size: large;
+  color: white;
+  line-break: initial;
+
+}
+.index_caja_contacta2  p{
+  position: relative;
+  font-size: large;
+  color: white;
+  line-break: initial;
+
+}
+
+.index_caja_texto_contacta > .caja_texto_contacta > p{
+font-size: 16px;
+width: 100%;
+}
+
+.index_caja_contacta  a{
+text-decoration: none;
+
+}
+.index_caja_contacta2  a{
+  text-decoration: none;
+  
+  }
+.index_caja_texto_contacta{
+height: 80%;
+overflow-y: auto;
+}
+
+
+#index_contacta_btn{
+border: 1px solid rgba(0, 0, 0, 0);
+
+padding-top: 1em;
+padding-right: 1em;
+padding-left: 1em;
+
+background-color: #FC2922;
+
+color: white;    
+border-style: none;
+border: none;    
+position: relative;
+bottom: -10%;
+
+}
+
+#index_contacta{
+position: relative;
+top: -0.4em;
+}
+#index_imagen_centro_AU{
+width:30%;
+padding: 0% 3%;
+}
+.index_container_imagenes_final{
+display: inline-flexbox;
+margin-top: 3%;
+flex-wrap: wrap;
+}
+.index_imagen_al_final{
+width: 30%;
+padding: 0% 1%;
+}
+#index_contacta_btn:hover{
+background-color: #fc29225e;
+border: 1px solid rgb(255, 255, 255);
+
+}
+/*Fin de seccion Actividades universitarias*/
+
+/* Inicio de responsive de la pagina principal */
+@media screen and (max-width: 530px) {
+  .index_decoracion2{
+display: none;
+  }
+  .index_contenedor_experiencia_alumnos{
+    justify-content: center;
+    text-align: center;
+    display: block;
+  }
+  .index_contenedor_experiencia_alumnos2{
+    justify-content: center;
+    text-align: center;
+    display: none;
+  }
+  .index_imagen_al_final{
+    padding-top: 20px;
+    width: 40%;
+  }
+  #index_imagen_centro_AU{
+    width:30%;
+    padding: 0% 3%;
+    display: none;}
+.index_slider_container{
+  height: 400px;
+  
+}
+.index_caja_contacta2{
+  display: none;
+}
+.index_galeriaclubs{
+  width: 100%;
+}
+.index_pExp{
+
+  font-size: 1px;
+  line-height: 45px;
+}
+.index_rubia_hermosa3{
+  border-radius: 190px;
+  width: 8%;
+  display: none;
+  
+}
+}
+
+@media screen and (max-width: 900px) {
+#index_img_banner{
+padding-bottom: 3%;
+}
+.index_contenedor_experiencia_alumnos{
+  display: inline-flexbox;
+  text-align: center;
+  justify-content: center;
+}
+.index_pExp{
+  font-size: 1.5em;
+}
+.index_rubia_hermosa{
+  width: 40%;
+}
+.index_rubia_hermosa3{
+  display: none;
+}
+.index_rubia_hermosa2{
+  border-radius: 190px;
+  width: 40%;
+  display: block;
+  
+}
+}
+/** FIN INDEX **/
+
+/** CLUBES **/
+
+
+/** BODY CLUBS */
+.clubs_body {
+  background: url(img/clubs_img.jpg);
+  margin: 0;
+}
+
+/** VÍDEO PRESENTACIÓN */
+.clubs_video {
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.clubs_app_cortina {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clubs_videoGrande {
+  height: 120vh;
+}
+
+/** CARTEL PRESENTACIÓN CLUBS */
+.clubs_presentacion {
+  text-align: center;
+  color: rgba(255, 255, 255);
+  font-size: 4.5em;
+  text-shadow: 0px 0px 20px rgb(0, 0, 0);
+  position: relative;
+}
+
+/** PRESENTACIÓN CLUBS TECNOLOGIA */
+.clubs_banners_1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  width: 60%;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: url(img/clubs_bannerInformatica.png) bottom no-repeat;
+}
+.clubs_banners_1 p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-size: 3em;
+  text-align: center;
+}
+/** PRESENTACIÓN CLUBS DEPORTE */
+.clubs_banners_2 {
+  position: relative;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: url(img/clubs_bannerDeporte.jpg) bottom no-repeat;
+}
+.clubs_banners_2 p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-size: 3em;
+  text-align: center;
+}
+/** PRESENTACIÓN CLUBS CIENCIAS */
+.clubs_banners_3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  width: 60%;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: url(img/clubs_bannerCiencias.png) bottom no-repeat;
+}
+.clubs_banners_3 p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-size: 3em;
+  text-align: center;
+}
+/** PRESENTACIÓN CLUBS SOCIALES */
+.clubs_banners_4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+
+  width: 60%;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: url(img/clubs_bannerSocial.png) center no-repeat;
+}
+.clubs_banners_4 p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-size: 3em;
+  text-align: center;
+}
+
+/** TARJETAS CLUBS */
+.clubs_cuerpo {
+  margin-top: -4%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 60vh;
+  justify-content: center;
+}
+
+/* PROPIEDADES CARTAS */
+.clubs_tarjetas {
+  width: 20em;
+  height: 22em;
+  margin: 3em;
+  position: relative;
+  font-family: "Droid Serif", serif;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.4s;
+  background-size: 197%;
+}
+#clubs_1 {
+  background: url(img-clubs/gamestudio_pvxVU59.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_2 {
+  background: url(img-clubs/logo_kinespana.2e16d0ba.fill-400x224.jpg) center
+    no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_3 {
+  background: url(img-clubs/ue-mun.2e16d0ba.fill-400x224.jpg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_4 {
+  background: url(img-clubs/formula.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_5 {
+  background: url(img-clubs/pride.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_6 {
+  background: url(img-clubs/robotics.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_7 {
+  background: url(img-clubs/airdiv.jpg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_8 {
+  background: url(img-clubs/club-rol-uem.svg) center no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_9 {
+  background: url(img-clubs/asociacion-odontologica-club-madri.2e16d0ba.fill-400x224.jpg)
+    center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_10 {
+  background: url(img-clubs/phyxs-logo-club-madrid-400x225.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_11 {
+  background: url(img-clubs/criptoclub.svg) center no-repeat;
+  background-size: 160%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_12 {
+  background: url(img-clubs/ue-e-sports-group.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_13 {
+  background: url(img-clubS/club-teatro-la-tarantella-uem-logo.svg) center
+    no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_14 {
+  background: url(img-clubs/chess-club-uem-logo.2e16d0ba.fill-400x224.jpg)
+    center no-repeat;
+  background-size: 137%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_15 {
+  background: url(img-clubS/club-fotografia-uem-logo.2e16d0ba.fill-400x224.jpg)
+    center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_16 {
+  background: url(img-clubS/irc-club.2e16d0ba.fill-400x224.jpg) center no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_17 {
+  background: url(img-clubS/cinema-club.svg) center no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_18 {
+  background: url(img-clubS/medicina.2e16d0ba.fill-400x224.jpg) center no-repeat;
+  background-size: 177%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_19 {
+  background: url(img-clubS/uepsa.svg) center no-repeat;
+  background-size: 217%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_20 {
+  background: url(img-clubS/cludeciencias3.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_21 {
+  background: url(img-clubS/club-informatica.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_22 {
+  background: url(img-clubS/dentalife-logo-club-madrid-400x225.svg) center
+    no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_23 {
+  background: url(img-clubS/uev-running-club.svg) center no-repeat;
+  background-size: 197%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_24 {
+  background: url(img-clubs/workout.jpg) center no-repeat;
+  background-size: 187%;
+  background-color: rgb(255, 255, 255);
+}
+#clubs_25 {
+  background: url(img-clubs/club-realmadrid) center no-repeat;
+  background-size: 90%;
+  background-color: rgb(255, 255, 255);
+}
+
+/* propiedades elementos a */
+.clubs_tarjetas a {
+  line-height: 2.5em;
+  /* background-color:rgba(0, 0, 0, 0.489); */
+  text-align: center;
+  width: 100%;
+  height: 2.5em;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.clubs_tarjetas .clubs_color_overlay {
+  background: rgba(110, 109, 109, 0.4);
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.clubs_tarjetas .clubs_gradient_overlay {
+  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.9) 21%);
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  z-index: 15;
+}
+
+/* DIFUMINADO DE LA CARTA */
+.clubs_tarjetas:hover {
+  box-shadow: 0px 18px 40px -9px rgba(0, 10, 30, 0.75);
+}
+.clubs_tarjetas:hover .clubs_card_info {
+  opacity: 1;
+  bottom: 50px;
+}
+.clubs_tarjetas:hover .clubs_color_overlay {
+  background: rgba(91, 91, 98, 0.8);
+}
+
+/* MUEVE EL TEXTO */
+.clubs_tarjetas:hover .clubs_titulo {
+  margin-top: -280px;
+}
+
+.clubs_titulo {
+  text-align: center;
+  margin: 100px 0 0 0;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.6s;
+}
+
+/* EFECTOS INTERIOR */
+
+.clubs_tarjetas:hover h3:after {
+  animation: changeLetter 0.3s 1 linear;
+  width: 100%;
+}
+
+/* TAMAÑO NOMBRE CLUB */
+.clubs_tarjetas h3 {
+  margin-left: 13px;
+  font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Abril Fatface", serif;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+.clubs_tarjetas h3 a {
+  text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.clubs_tarjetas h3 a:hover {
+  text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+/* BARIITA DEL MEDIO */
+
+.clubs_card_info h3:after {
+  content: " ";
+  display: block;
+  width: 10%;
+  height: 2px;
+  margin: 0px auto;
+  border: 0;
+  background: #ff0000;
+  transition: all 0.2s;
+}
+
+/* TEXTO DE ATRAS */
+
+.clubs_card_info {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  bottom: -0px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-style: 16px;
+  line-height: 24px;
+  z-index: 20;
+  opacity: 0;
+  transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.clubs_card_info p {
+  width: 100%;
+  text-align: justify;
+  position: relative;
+}
+
+/* BOTON DE APUNTARSE */
+.clubs_card_info a {
+  position: relative;
+
+  display: block;
+  width: 100px;
+  margin: 5px auto;
+  background: #fff;
+  color: #444;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+.clubs_card_info a:hover {
+  background: #ec4444;
+  color: #fff;
+}
+.clubs_card_info a:hover span {
+  filter: brightness(10);
+  opacity: 1;
+}
+.clubs_utility_info {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  text-align: left;
+}
+.clubs_utility_info:after {
+  content: " ";
+  display: block;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+  width: 30px;
+  height: 15px;
+}
+
+.clubs_utility_info a:hover {
+  text-decoration: underline;
+}
+.clubs_utility_list {
+  list-style-type: none;
+  margin: 0px 0 -1000px 110px;
+  padding: 0;
+  width: 100%;
+}
+
+.clubs_utility_list li {
+  padding: 3px 0 15px 0px;
+  font-size: 0.9em;
+  margin-left: -25%;
+}
+
+.clubs_utility_list li p {
+  margin-top: -8%;
+  margin-left: 9%;
+}
+
+.clubs_hashtags {
+  margin: 2.845vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#clubs_primero {
+  position: relative;
+  color: black;
+  top: 138px;
+  left: -20px;
+  padding: 5px;
+  font-size: 10px;
+  box-shadow: 0px 2px 6px #000;
+  background-color: #f3f3f3;
+}
+
+#clubs_segundo {
+  position: relative;
+  color: black;
+  top: 138px;
+  padding: 5px;
+  font-size: 10px;
+  box-shadow: 0px 2px 6px #000;
+  background-color: #f3f3f3;
+}
+#clubs_tercero {
+  position: relative;
+  color: black;
+  left: 20px;
+  top: 138px;
+  padding: 5px;
+  font-size: 10px;
+  box-shadow: 0px 2px 6px #000;
+  background-color: #f3f3f3;
+}
+/** RESPONSIVE CLUBES **/
+/* MOVIL */
+
+@media screen and (max-width: 1024px) {
+  .clubs_presentacion {
+    font-size: 2.3em;
+  }
+  .clubs_banners_1 p {
+    font-size: 1.4em;
+  }
+  .clubs_banners_2 p {
+    font-size: 1.5em;
+  }
+  .clubs_banners_3 p {
+    font-size: 1.4em;
+  }
+  .clubs_banners_4 p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clubs_presentacion {
+    font-size: 1.3em;
+  }
+}
+
+/* Fin clubes */ 
+
+/* Inicio css de Login */
+.login_contenedor_de_todo {
+  /* font-family: 'Open Sans', Helvetica, Arial, sans-serif; */
+  font-family: Hellix-Bold;
+  background: #ededed;
+  justify-content: center;
+  background-image: url(img/fondo_del_login.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+/* CARACTERISTICAS GENERALES*/
+.login_submit {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.login_h2 {
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+  position: relative;
+  top: -40px;
+}
+.login_label {
+  display: block;
+  width: 260px;
+  margin: 8px auto 0;
+  text-align: center;
+}
+.login_label .login_span_formu {
+  font-size: 12px;
+  color: #cfcfcf;
+  text-transform: uppercase;
+}
+.login_inputs {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(253, 4, 4, 0.265);
+  text-align: center;
+}
+/* FIN CARACTERISTICAS GENERALES */
+
+/* CONTENEDOR DE TODO */
+.login_cont {
+  top: 0px;
+  border-radius: 15px;
+  overflow: hidden; /* ESCONDE LA PARTE DE ATRAS*/
+  position: relative;
+  width: 900px;
+  margin: 140px auto -10px;
+  background: #fff;
+  padding-bottom: 10%;
+}
+/* FIN CONTENEDOR DE TODO */
+
+/* bloque de escribir e login_iconos */
+.form {
+  bottom: 40px;
+  position: relative;
+  width: 640px;
+  height: 40vh;
+  transition: transform 1.2s ease-in-out;
+  padding: 50px 30px 0;
+}
+.sub-cont {
+  overflow: hidden;
+  position: absolute;
+  left: 640px;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  padding-left: 260px;
+  background: #fff;
+  transition: transform 1.2s ease-in-out;
+}
+/* FIN bloque de escribir e login_iconos */
+
+/* BOTON DE INICIAR SESION O REGISTRARSE */
+#login_ini:hover {
+  background-color: #e24848;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+/* IMGANEN DE FONDO */
+/* barra lateral  */
+.login_img {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  padding-top: 325px;
+}
+/* barra lateral  */
+
+.login_img:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  background-image: url(img/fondo_formulario.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 1.2s ease-in-out;
+}
+
+.login_img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* FIN IMGANEN DE FONDO */
+
+/* VARIABLE JAVA SCRPIT */ /* MUEVE EL FONDO Y HACE APARECER LA PARTE DE ATRAS */
+.login_cont.s--signup .login_img:before {
+  transform: translate3d(640px, 0, 0);
+}
+.login_cont.s--signup .sub-cont {
+  transform: translate3d(-640px, 0, 0);
+}
+/* FIN VAIABLE */
+
+/* TEXTO DE ¿YA TIENES CUENTA Y ERES NUEVO? */
+.login_img_text {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  color: #fff;
+  transition: transform 1.2s ease-in-out;
+}
+/* FIN TEXTO DE ¿YA TIENES CUENTA Y ERES NUEVO? */
+
+/* TRANSICION COLOCACION Y EFECTO DE SIGN UP */
+.login_img_text .login_h2 {
+  right: 20px;
+  font-weight: normal;
+}
+.login_img_text p {
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.login_cont.s--signup .login_img_text.m--up {
+  transform: translateX(520px);
+}
+.login_img_text.m--in {
+  transform: translateX(-520px);
+}
+.login_cont.s--signup .login_img_text.m--in {
+  transform: translateX(0);
+}
+.login_img_btn {
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  width: 100px;
+  height: 36px;
+  margin: 0 auto;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+.login_img_btn:after {
+  content: "";
+  /* z-index: 2; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+  height: 90%;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+.login_img_btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.2s;
+}
+.login_img_btn span.m--in {
+  transform: translateY(-72px);
+}
+.login_cont.s--signup .login_img_btn span.m--in {
+  transform: translateY(0);
+}
+.login_cont.s--signup .login_img_btn span.m--up {
+  transform: translateY(72px);
+}
+
+/* FIN DE TRANSICION */
+
+/* registrarse e iniciarsesion */
+.login_submit {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: #ff0000;
+  text-transform: uppercase;
+}
+/* fin  registrarse e iniciarsesion */
+
+/* EFFECTOS DE TRANSICION JAVA */
+.sign-in {
+  transition-timing-function: ease-out;
+}
+.login_cont.s--signup .sign-in {
+  transition-timing-function: ease-in-out;
+  transition-duration: 1.2s;
+  transform: translate3d(640px, 0, 0);
+}
+.sign-up {
+  transform: translate3d(-900px, 0, 0);
+}
+.login_cont.s--signup .sign-up {
+  transform: translate3d(0, 0, 0);
+}
+/* FIN EFFECTOS DE TRANSICION JAVA */
+
+/* POSICION DE login_iconos */
+.login_iconos.alante {
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  bottom: -350px;
+}
+.login_iconos.atras {
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  bottom: -380px;
+}
+/* FIN POSICION DE login_iconos */
+
+/* EFECTOS login_iconos */
+.login_wrapper {
+  display: inline-flex;
+}
+
+.login_wrapper .icon {
+  position: relative;
+  background-color: #ec3535;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.login_wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.login_wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.login_wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.login_wrapper .icon:hover span,
+.login_wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login_wrapper .twitter:hover,
+.login_wrapper .twitter:hover .tooltip,
+.login_wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.login_wrapper .instagram:hover,
+.login_wrapper .instagram:hover .tooltip,
+.login_wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.login_wrapper .github:hover,
+.login_wrapper .github:hover .tooltip,
+.login_wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.login_wrapper .youtube:hover,
+.login_wrapper .youtube:hover .tooltip,
+.login_wrapper .youtube:hover .tooltip::before {
+  background-color: #0143a5;
+  color: #ffffff;
+}
+/* PARA MOVILES */
+@media screen and (max-width: 600px) {
+.login_cont {
+  border-radius: 20px;
+  overflow: hidden; /* ESCONDE LA PARTE DE ATRAS*/
+  position: relative;
+  width: 350px;
+  height: 450px;
+  margin: 55px auto 20px;
+  background: #fff;
+  padding-right: 0px;
+  padding-left: -100px;
+}
+.login_izquierda {
+  left: -23px;
+}
+.login_derecha {
+  right: -76px;
+}
+.form {
+  /* right: -10px; */
+  bottom: 40px;
+  position: relative;
+  width: 300px;
+  height: 100%;
+  transition: transform 1.2s ease-in-out;
+  padding: 50px 0px 0;
+}
+.sub-cont {
+  overflow: hidden;
+  position: absolute;
+  left: 240px;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  padding-left: 0px;
+  background: #fff;
+  transition: transform 1.2s ease-in-out;
+}
+.login_img {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 13%;
+  height: 100%;
+  padding-top: 360px;
+}
+/* barra lateral  */
+
+.login_img:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 960px;
+  height: 100%;
+  background-image: url(img/fondo_formulario.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 1.2s ease-in-out;
+}
+
+.login_img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* FIN IMGANEN DE FONDO */
+
+/* VARIABLE JAVA SCRPIT */ /* MUEVE EL FONDO Y HACE APARECER LA PARTE DE ATRAS */
+.login_cont.s--signup .login_img:before {
+  transform: translate3d(350px, 0, 0);
+}
+.login_cont.s--signup .sub-cont {
+  transform: translate3d(-240px, 0, 0);
+}
+.login_img_text p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.login_img_text .login_h2 {
+  right: 15px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.login_iconos.alante {
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  bottom: -370px;
+}
+.login_iconos.atras {
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auato;
+  bottom: -380px;
+}
+.login_wrapper .icon {
+  position: relative;
+  background-color: #ec3535;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 10px;
+  height: 10px;
+  font-size: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.login_submit {
+  border: none;
+  outline: none;
+  /* background: none; */
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  display: block;
+  margin: 30px auto;
+  width: 130px;
+  height: 36px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.login_h2 {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: -40px;
+}
+.login_label {
+  display: block;
+  width: 170px;
+  margin: 8px auto 0;
+  text-align: center;
+}
+.login_label span {
+  font-size: 12px;
+  color: #cfcfcf;
+  text-transform: uppercase;
+}
+.login_inputs {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(253, 4, 4, 0.265);
+  text-align: center;
+}
+/* FIN CARACTERISTICAS GENERALES */
+}
+/* FIN PARA MOVILES */
+
+/* PARA TABLETS */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+.login_cont {
+  border-radius: 20px;
+  overflow: hidden; /* ESCONDE LA PARTE DE ATRAS*/
+  position: relative;
+  width: 650px;
+  height: 100%;
+  margin: 30px auto 8px;
+  background: #fff;
+  padding-right: 0px;
+  padding-left: -100px;
+}
+.login_izquierda {
+  left: 140px;
+}
+.login_derecha {
+  right: -226px;
+}
+.form {
+  margin-top: 40px;
+  bottom: 40px;
+  position: relative;
+  width: 300px;
+  height: 100%;
+  transition: transform 1.2s ease-in-out;
+  padding: 0px 0px;
+}
+.sub-cont {
+  overflow: hidden;
+  position: absolute;
+  left: 537px;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  padding-left: 0px;
+  background: #fff;
+  transition: transform 1.2s ease-in-out;
+}
+.login_img {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: -4px;
+  top: -40px;
+  width: 13%;
+  height: 100%;
+  padding-top: 300px;
+}
+/* barra lateral  */
+
+.login_img:before {
+  content: "";
+  position: absolute;
+  width: 960px;
+  height: 100%;
+  background-image: url(img/fondo_formulario.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 1.2s ease-in-out;
+}
+
+.login_img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* FIN IMGANEN DE FONDO */
+
+/* VARIABLE JAVA SCRPIT */ /* MUEVE EL FONDO Y HACE APARECER LA PARTE DE ATRAS */
+.login_cont.s--signup .login_img:before {
+  transform: translate3d(650px, 0, 0);
+}
+.login_cont.s--signup .sub-cont {
+  transform: translate3d(-537px, 0, 0);
+}
+.login_img_text p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.login_img_text .login_h2 {
+  right: -20;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.login_iconos.alante {
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  bottom: -300px;
+}
+.login_iconos.atras {
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auato;
+  bottom: -315px;
+}
+.login_wrapper .icon {
+  position: relative;
+  background-color: #ec3535;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 10px;
+  height: 10px;
+  font-size: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.login_submit {
+  border: none;
+  outline: none;
+  /* background: none; */
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  display: block;
+  margin: 30px auto;
+  width: 130px;
+  height: 36px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+.login_h2 {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: 0px;
+}
+.login_label {
+  display: block;
+  width: 170px;
+  margin: 8px auto 0;
+  text-align: center;
+}
+.login_label span {
+  font-size: 12px;
+  color: #cfcfcf;
+  text-transform: uppercase;
+}
+.login_inputs {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  display: block;
+  width: 100%;
+  margin-top: -3px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(253, 4, 4, 0.265);
+  text-align: center;
+}
+}
+/* FIN PARA TABLETS */
+/* FIN DE CSS LOGIN*/
+
+/*INICIO PAGINA DE UN CLUB*/
+/* Banner */
+.divprincipal_club {
+text-align: center;
+position: relative;
+max-width: 100vw;
+height: 17vw;
+background-image: url(img/1j8a0401web.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+/* texto banner */
+.tituloPRI_club {
+position: relative;
+color: white;
+font-size: 5vw;
+top: 5vw;
+text-shadow: 4px 2px black;
+}
+/* lineas del titulo princcipal */
+.line1 {
+position: absolute;
+width: 30%;
+top: 8.5vw;
+background-color: white;
+border: 0.15vw white solid;
+z-index: 10;
+}
+.line2 {
+left: 68.5vw;
+position: absolute;
+top: 8.5vw;
+width: 30%;
+background-color: white;
+border: 0.15vw white solid;
+}
+
+.contenedorgeneral_club {
+position: absolute;
+}
+.contenedorVerticales_club {
+width: 100%;
+overflow: hidden;
+position: relative;
+/* background-color: green; */
+box-sizing: border-box;
+display: inline-flex;
+justify-content: center;
+}
+/* Cuadro izquierdo */
+
+.divvertical1_club {
+position: relative;
+right: 1vw;
+width: 40vw;
+padding: 1%;
+}
+
+#tituloINFO_club {
+position: absolute;
+font-size: 2vw;
+top: 2vw;
+}
+.lineaINFO_club {
+position: relative;
+color: #fc2922;
+background-color: #fc2922;
+top: 1.5vw;
+border: #fc2922 0.06vw solid;
+z-index: 2;
+}
+#textoINFO_club {
+position: relative;
+font-size: 1vw;
+top: 2vw;
+text-align: justify;
+}
+
+/* logo banner */
+.circulo_club {
+/* background-color: red; */
+top: 2vw;
+position: relative;
+height: 22vh;
+width: 14vw;
+float: right;
+z-index: 20;
+margin-left: 1vw;
+/* overflow: hidden; */
+}
+#logoTEXT_club {
+position: relative;
+width: 33vw;
+height: 33vw;
+left: -9vw;
+top: -10vw;
+}
+
+/* Info con iconos */
+#cuadrito1_club {
+position: relative;
+/* background-color: #fc2922; */
+height: 3%;
+width: 37%;
+margin-bottom: 5vh;
+float: left;
+}
+#cuadrito2_club {
+position: relative;
+/* background-color: aqua; */
+height: 3%;
+width: 40%;
+margin-bottom: 5vh;
+float: left;
+left: 8vw;
+}
+#cuadrito3_club {
+position: relative;
+/* background-color: blueviolet; */
+height: 3%;
+width: 37%;
+margin-bottom: 5vh;
+float: left;
+}
+#cuadrito4_club {
+position: relative;
+/* background-color: yellow; */
+left: 8vw;
+height: 3%;
+width: 37%;
+margin-bottom: 5vh;
+float: left;
+}
+#cuadrito5_club {
+position: relative;
+/* background-color: purple; */
+height: 3%;
+width: 37%;
+margin-bottom: 5vh;
+float: left;
+}
+#cuadrito6_club {
+position: relative;
+/* background-color: brown; */
+height: 3%;
+width: 38%;
+margin-bottom: 5vh;
+float: left;
+left: 8vw;
+}
+#cuadrito7_club {
+position: relative;
+background-color: black;
+height: 3%;
+width: 37%;
+margin-bottom: 5vh;
+float: left;
+}
+#cuadrito8_club {
+position: relative;
+background-color: goldenrod;
+height: 3%;
+width: 37%;
+margin-bottom: 5vh;
+float: left;
+left: 10vw;
+}
+
+.caract_club {
+display: inline-block;
+position: relative;
+height: 30vh;
+top: 6vh;
+}
+
+.imgIZQ_club {
+height: 2vw;
+width: 2vw;
+float: left;
+position: absolute;
+}
+.textoICON_club {
+font-size: 1vw;
+position: relative;
+left: 3vw;
+/* color: #fc2922; */
+}
+
+/* Cuadro derecho */
+.divvertical2_club {
+position: relative;
+width: 40vw;
+right: -1vw;
+/* background-color: blue; */
+text-align: center;
+padding: 0%;
+}
+#titulojoin_club {
+position: relative;
+top: 2vh;
+font-size: 2.5vw;
+}
+
+#textojoin_club {
+position: relative;
+top: 2vh;
+font-size: 1vw;
+}
+/* formulario */
+.formulario_club {
+position: relative;
+top: 3vh;
+background-color: rgba(169, 169, 169, 0.3);
+height: 90%;
+}
+
+.rellenoformulario_club {
+width: 90%;
+height: 80%;
+position: absolute;
+overflow: hidden;
+margin-left: 2vw;
+/* background-color:#fc29221f; */
+}
+.rellenoformulario_club input {
+position: relative;
+background-color: white;
+height: 8%;
+width: 40%;
+margin-bottom: 2vh;
+padding: 1%;
+font-size: 1vw;
+text-align: center;
+border: none;
+outline: none;
+overflow: scroll;
+}
+
+.rellenoformulario_club input:hover {
+box-shadow: 0px 0px 0px 1px #fc2922;
+}
+/* campos del formulario */
+
+#mailform_club {
+width: 83%;
+text-align: center;
+}
+#masFORM_club {
+width: 15%;
+text-align: center;
+left: -1.3vw;
+}
+#movilFORM_club {
+position: relative;
+width: 57%;
+left: 1.5vw;
+text-align: center;
+}
+
+#textogrande_club {
+height: 20%;
+width: 82.4%;
+}
+
+/* botón de enviar solicitud */
+.ENVIAR_club {
+position: relative;
+background-color: #fc2922;
+border: 1px #fc2922 solid;
+height: 10%;
+width: 11vw;
+color: white;
+top: 2vh;
+left: 2.7vw;
+font-size: 1vw;
+}
+
+.ENVIAR_club:hover {
+color: #fc2922;
+background-color: white;
+}
+
+/* Aceptar términos */
+#casilladerechos_club {
+position: relative;
+overflow: hidden;
+float: left;
+left: -3.3vw;
+height: 1.5vw;
+z-index: 10;
+}
+#casilladerechos_club:hover {
+box-shadow: none;
+}
+#textoCasilla_club {
+position: relative;
+font-size: 0.6vw;
+left: -8.5vw;
+text-align: justify;
+}
+/* Móviles */
+
+@media (min-width: 300px) and (max-width: 700px) {
+.contenedorVerticales_club {
+  flex-wrap: wrap;
+}
+
+#casilladerechos_club {
+  height: 3vw;
+}
+#textoINFO_club {
+  font-size: 0.8vh;
+  top: 2vh;
+}
+#logoTEXT_club {
+  width: 60vw;
+  height: 60vw;
+  margin-left: -5vw;
+  top: -15vw;
+}
+
+#tituloINFO_club {
+  top: 4vh;
+  font-size: 1.5vh;
+}
+
+.divvertical1_club {
+  width: 51%;
+  top: -3vh;
+  /* overflow: hidden; */
+}
+img.imgIZQ_club {
+  height: 5vw;
+  width: 3vw;
+}
+
+.lineaINFO_club {
+  position: relative;
+  top: 1vh;
+  height: 0.005vh;
+  width: 140%;
+}
+
+p.textoICON_club {
+  font-size: 1.5vw;
+  margin-left: 1vw;
+  top: 1vh;
+}
+.divvertical2_club {
+  width: 60%;
+  top: -10vh;
+}
+p#textoCasilla_club {
+  font-size: 1vw;
+}
+
+input {
+  height: 5vh;
+}
+.formulario_club {
+  height: 80vw;
+  overflow: visible;
+}
+
+.rellenoformulario_club {
+  top: 1.5vh;
+  overflow: visible;
+  height: 80%;
+}
+.caract_club {
+  position: relative;
+  margin-left: 1vw;
+  height: 20vh;
+  top: -2vh;
+}
+
+.rellenoformulario_club input {
+  height: 3vw;
+}
+
+#textogrande_club {
+  height: 5vh;
+}
+
+#cuadrito2_club,
+#cuadrito4_club,
+#cuadrito6_club {
+  margin-left: 10vw;
+  width: 41%;
+}
+}
+
+/* FIN PAGINA DE UN CLUB*/
+/*INICIO DE DOWNLOAD APP*/
+/* fondo */
+.app_contenedor_medio {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+.app_video {
+position: absolute;
+width: 100%;
+justify-content: center;
+align-items: center;
+background-attachment: scroll;
+background-color: aliceblue;
+}
+.app_videoGrande {
+width: 100%;
+}
+.app_cortina {
+background-color: black;
+position: absolute;
+width: 110%;
+height: 100%;
+opacity: 0.5;
+}
+/* mockup */
+.app_imagen {
+position: relative;
+z-index: 2;
+width: 50%;
+height: 50%;
+margin-top: 15vh;
+margin-left: 50%;
+}
+/* Botón android */
+#android_app {
+position: relative;
+z-index: 2;
+width: 15%;
+height: 10%;
+margin-left: 35vw;
+margin-left: 14vw;
+margin-top: -25vh;
+margin-bottom: 10vh;
+}
+/* botón ios */
+#ios_app {
+position: relative;
+z-index: 2;
+width: 15%;
+height: 10%;
+margin-left: 2vw;
+margin-top: -25vh;
+margin-bottom: 10vh;
+}
+
+/* Texto descárganos */
+#app_descarganos {
+position: absolute;
+/* background-color: #fc2922; */
+width: 50vw;
+text-align: center;
+overflow: hidden;
+height: 28vh;
+z-index: 2;
+font-size: 5vw;
+margin-top: -57vh;
+margin-left: 6vw;
+margin-bottom: -50vh;
+color: white;
+}
+/* Móviles */
+@media screen and (max-width: 600px) {
+.app_contenedor_medio {
+  overflow: visible;
+}
+}
+/* Tablets */
+@media screen and (max-width: 980px) {
+.app_contenedor_medio {
+  height: 100vh;
+  margin-bottom: -10vw;
+  overflow: hidden;
+}
+
+.app_video {
+  width: 400vw;
+}
+.app_imagen {
+  margin-top: 25vh;
+  position: absolute;
+  width: 98%;
+  margin-left: 6%;
+}
+
+#app_descarganos {
+  position: absolute;
+  margin-top: 10vh;
+  font-size: 8vw;
+  margin-left: 9vw;
+  width: 80vw;
+}
+
+#android_app {
+  position: absolute;
+  margin-top: 75vh;
+  margin-left: 50vw;
+  width: 40%;
+}
+
+#ios_app {
+  position: absolute;
+  margin-top: 75vh;
+  margin-left: 8vw;
+  width: 40%;
+}
+
+.app_cortina {
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+}
+/*FIN DOWNLOAD*/
+
+/*INICIO CONTACTO*/
+.contacto_tituloh1 {
+font-size: 5vh;
+font-family: Hellix-regular;
+color: white;
+text-align: center;
+}
+
+#contacto_divPrincipal {
+height: 22vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+justify-content: center;
+float: left;
+position: relative;
+top: -6vh;
+}
+
+.contacto_card {
+float: left;
+height: 14vh;
+width: 10vw;
+padding-top: 1.7vh;
+border-radius: 2vh;
+position: relative;
+text-align: center;
+justify-content: center;
+margin-left: 4.5vw;
+top: 1.8vh;
+overflow: hidden;
+position: relative;
+margin-top: -6vh;
+}
+
+.contacto_imgj {
+height: 4vh;
+width: 2vw;
+margin-bottom: 2vh;
+}
+#contacto_mail {
+width: 2.5vw;
+}
+
+.contacto_textop,
+.contacto_textop1 {
+font-size: 0.7vw;
+font-family: Hellix-Bold;
+color: white;
+margin-top: -1.4vh;
+}
+
+.contacto_textotit {
+font-size: 1vw;
+font-family: Hellix-Bold;
+color: white;
+margin-top: -1vh;
+}
+
+.contacto_card:before {
+content: "";
+position: absolute;
+top: 0;
+right: 100%;
+width: 50%;
+height: 0.4vh;
+background: #fc2922;
+transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.contacto_card::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 100%;
+width: 50%;
+height: 0.4vh;
+background: #fc2922;
+transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+border: 1vh;
+}
+
+.contacto_card:hover {
+color: #fc2922;
+transform: scale(1.1);
+}
+.contacto_card:hover:before {
+right: 0;
+}
+.contacto_card:hover:after {
+left: 0;
+}
+
+/* formulario*/
+
+#contacto_secundario {
+width: 100%;
+
+position: relative;
+padding-top: 5%;
+padding-bottom: 5%;
+overflow: hidden;
+background-image: url(img/Fondo_Contacto.png);
+background-position: center;
+background-size: cover;
+display: flex;
+margin-top: -4vh;
+}
+.contacto_formulario {
+width: 90vw;
+height: 90%;
+text-align: center;
+margin-left: 19vw;
+}
+/* AÑADIR DIV QUE CONTENGA EL FORMULARIO CON ELBOX SIZING */
+/* * {
+box-sizing: border-box;
+} */
+
+.contacto_titulo_contacto {
+font-size: 2vw;
+height: 8vh;
+text-align: center;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 2vh;
+/* left: -6vw; */
+}
+
+/* html,
+body {
+font-family: Hellix-bold;
+font-size: 14px;
+color: white;
+} */
+
+/* POR PUTO 
+input,
+textarea {
+outline: none;
+} */
+
+.contacto_h1 {
+margin-top: 0;
+font-family: Hellix-Bold;
+font-size: 3vw;
+}
+
+.contacto_decor {
+position: relative;
+top: 4vh;
+width: 60%;
+height: 90%;
+border-radius: 15px;
+background: url(img/fondo2.png);
+overflow: hidden;
+margin-left: 4%;
+}
+
+.contacto_form-inner {
+padding: 5.2vh;
+margin-top: 4vh;
+margin-bottom: 5vh;
+}
+
+.contacto_form-inner input,
+.contacto_form-inner textarea {
+display: block;
+width: 100%;
+padding: 2vh;
+margin-bottom: 2vh;
+border: none;
+border-radius: 20px;
+background: #d0dfe8;
+}
+
+.contacto_form-inner textarea {
+resize: none;
+}
+
+/* button {
+width: 100%;
+padding: 1.1vh;
+margin-top: 2.5vh;
+border-radius: 20px;
+border: none;
+border-bottom: 0.5vh solid #fc2922;
+background: #fc2922;
+font-size: 1vw;
+color: #fff;
+}
+
+button:hover {
+background: white;
+}
+
+button:hover p {
+color: #fc2922;
+} */
+
+@media (max-width: 568px) {
+.contacto_decor {
+  width: 60%;
+}
+}
+/* Móviles */
+@media (min-width: 370px) and (max-width: 760px) {
+.navegacion_container {
+  overflow: visible;
+  width: 100%;
+  left: 0vw;
+}
+nav {
+  background-color: #fc2922b4;
+  width: 20%;
+}
+.navegacion_menu {
+  text-align: center;
+  margin-left: 0vh;
+  margin-right: 0vh;
+}
+
+a.navegacion_link_menu {
+  font-size: 2vw;
+}
+.navegacion_logouem {
+  margin-right: 5px;
+  width: 70px;
+}
+#contacto_secundario {
+  width: 100%;
+  margin-left: 0vw;
+  height: 110%;
+  top: 5.2vh;
+}
+.contacto_decor {
+  position: relative;
+  text-align: center;
+  top: -4vh;
+  left: -9vw;
+  height: 100%;
+  overflow: visible;
+}
+.contacto_formulario * {
+  width: 90%;
+  padding-left: 10%;
+}
+
+.contacto_formulario {
+  height: 80vh;
+}
+
+.contacto_titulo_contacto {
+  left: -5.5vw;
+}
+
+.contacto_imgj {
+  width: 6vw;
+  height: 4vh;
+  padding-left: 0%;
+}
+
+#contacto_mail {
+  width: 8vw;
+  height: 3vh;
+  padding-left: 0%;
+}
+.contacto_textotit {
+  font-size: 1.5vw;
+  padding-left: 0%;
+}
+.contacto_textop {
+  font-size: 1.5vw;
+  padding-left: 0%;
+  margin-top: -2vh;
+}
+
+.contacto_textop1 {
+  font-size: 1vw;
+  padding-left: 0%;
+  margin-top: -2vh;
+}
+.contacto_form-inner .contacto_h1 {
+  font-size: 6vw;
+}
+.contacto_form-inner {
+  margin-bottom: 30vh;
+  width: 120%;
+  margin-left: -9vw;
+}
+
+#contacto_letrasENVIAR {
+  font-size: 4vw;
+}
+.contacto_card {
+  width: 13vw;
+  height: 11vh;
+  padding-left: 0%;
+  margin-left: 3.3vw;
+  padding-top: 1.3vh;
+}
+.contacto_card:before {
+  height: 0.2vh;
+}
+
+.contacto_card::after {
+  height: 0.2vh;
+}
+
+#contacto_divPrincipal {
+  position: relative;
+  width: 70vw;
+  height: 20vh;
+  width: 100%;
+  margin-top: -25vh;
+  padding-left: 0%;
+  overflow: visible;
+}
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+#contacto_secundario {
+  height: 100vh;
+  overflow: hidden;
+}
+.contacto_decor {
+  margin-left: -11%;
+  margin-top: 5vw;
+  width: 100%;
+  text-align: center;
+  overflow: visible;
+  height: 85vh;
+}
+.contacto_formulario * {
+  width: 90%;
+  padding-left: 10%;
+}
+
+.contacto_imgj {
+  width: 6vw;
+  height: 6vw;
+  position: relative;
+  left: -5vw;
+}
+.contacto_titulo_contacto {
+  position: relative;
+  font-size: 4vw;
+  left: -7vw;
+  top: 2vw;
+}
+
+#contacto_mail {
+  width: 7vw;
+  height: 6vw;
+  left: -5vw;
+}
+.contacto_textotit {
+  font-size: 1vw;
+  width: 15vw;
+  left: -7.5vw;
+  position: relative;
+}
+.contacto_textop {
+  font-size: 1vw;
+  position: relative;
+  margin-left: -4.1vw;
+}
+.contacto_form-inner .contacto_h1 {
+  font-size: 6vw;
+}
+.contacto_form-inner {
+  margin-bottom: 40vw;
+  width: 120%;
+  margin-left: -13vw;
+}
+
+#contacto_letrasENVIAR {
+  font-size: 4vw;
+  margin-left: -2vw;
+}
+.contacto_card {
+  width: 20vw;
+  height: 11vh;
+  margin-left: 7vw;
+  margin-top: -2vh;
+  padding-top: 1.7vh;
+  text-align: center;
+  position: relative;
+}
+.contacto_card:before {
+  height: 0.2vh;
+}
+
+.contacto_card::after {
+  height: 0.2vh;
+}
+
+#contacto_divPrincipal {
+  height: 18vh;
+  position: relative;
+  top: -43vw;
+  width: 100vw;
+  left: -20vw;
+}
+.contenedorfooter {
+  visibility: show;
+}
+
+.contacto_textop1 {
+  position: relative;
+  left: -7vw;
+  font-size: 1vw;
+}
+.contacto_form-inner {
+  margin-left: -11vw;
+}
+}
+/**FIN CONTACTO CSS**/

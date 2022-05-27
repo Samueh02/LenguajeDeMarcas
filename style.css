@@ -1,0 +1,668 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Hellix-Bold;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #D9D9D9;
+
+}
+@font-face {
+  font-family: "Hellix-regular";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+  font-family: "Hellix-Bold";
+  src: url(fuentes/Hellix/Hellix-Bold.ttf);
+}
+/** BARRA DE NAVEGACIÓN */
+.navegacion_container {
+  position: absolute;
+  overflow: hidden;
+  height: 40px;
+  width: 100%;
+  background-color: #fc2922;
+  display: inline-block;
+  z-index: 10;
+}
+
+.navegacion_menu {
+  display: none;
+  position: relative;
+  text-align: center;
+  padding: 1.5vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.navegacion_menu:hover {
+  background-color: #240504a4;
+  cursor: pointer;
+}
+a.navegacion_link_menu {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.navegacion_logo {
+  position: relative;
+  width: 20%;
+  z-index: 100;
+  right: -77vw;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.navegacion_logouem {
+  width: 100px;
+  float: right;
+}
+
+/* MEDIA QUERY BARRA DE NAVEGACIÓN */
+@media screen and (min-width: 900px) {
+  nav {
+    display: flex;
+  }
+  .navegacion_menu {
+    display: inline-block;
+  }
+  .navegacion_icon {
+    display: none;
+    position: relative;
+  }
+  .navegacion_container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navegacion_container {
+    overflow: visible;
+  }
+  nav {
+    background-color: #fc2922b4;
+    width: 20%;
+    margin-top: 1.1%;
+  }
+  .navegacion_menu {
+    text-align: center;
+    margin-left: 0vh;
+    margin-right: 0vh;
+  }
+
+  a.navegacion_link_menu {
+    font-size: 2vw;
+  }
+  .navegacion_logouem {
+    margin-right: 5%;
+    width: 100px;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+      margin-top: 1%;
+    }
+    .navegacion_logouem {
+      margin-top: 10%;
+      margin-right: 5%;
+      width: 60px;
+
+    }
+  }
+}
+
+/* FIN BARRA DE NAVEGACIÓN */
+/*Inicio del div principal*/
+.index_clubs_app_cortina {
+  background-color: rgba(0, 0, 0, 0.336);
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  }
+.index_pantallaPrincipal{
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  background-image: url(logos/Imagenes/1.\ Index_Imagen_Principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px;
+}
+.index_textoPrincipal{
+  position: relative;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  top: 40%;
+  
+}
+.index_ap:hover{
+border: 1px solid rgb(255, 255, 255);
+background-color: #fc2922a4; 
+cursor: pointer;
+
+}
+.index_ap{
+padding-top: 3px;
+min-width:130px;
+letter-spacing: 0.4em;
+color: white;
+  position: relative;
+  top : 50%;
+  left: -15%;
+  width: 8%;
+  height: 5%;
+  border-radius: 7px;
+  border-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.63);
+  background-color: rgba(179, 41, 41, 0.397);
+}
+/* Fin del div principal*/
+/* Inicio de la parte de clubes y titulo*/
+.index_contener2{
+  text-align: center;
+}
+.index_galeriaclubs{
+  display: inline-block;
+  margin-top: 40px;
+  width: 80%;
+  height: 150px;
+  text-align: center;
+  background-position-y: 40%;
+  background-size: cover;
+  background-image: url(/logos/Imagenes/2.Banner_Clubs.jpg);
+  background-repeat: no-repeat;
+  background-color: grey;
+}
+
+.index_Conoceclubs{
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+  height: 70%;
+  font-size: 1.8em;
+  width: 90%;
+}
+/*Fin del la seccion clubs*/
+/*inicio de la seccion de quotes*/
+
+.index_rubia_hermosa{
+  position: relative;
+  width: 22%;
+  height: 20%;
+  border-radius: 150px;
+  vertical-align: middle;
+}
+.index_rubia_hermosa3{
+  position: relative;
+  width: 22%;
+  height: 20%;
+  border-radius: 150px;
+  vertical-align: middle;
+}
+.index_rubia_hermosa2{
+  display: none;
+  position: relative;
+  width: 22%;
+  height: 20%;
+  border-radius: 150px;
+  vertical-align: middle;
+}
+.index_decoracion{
+  align-self: center;
+  border: 1px solid white;
+  width: 75%;
+  margin-left: 13% ;
+}
+.index_decoracion2{
+  align-self: center;
+  border: 1px solid white;
+  width: 75%;
+  margin-left: 13% ;
+}
+.index_pExp{
+  
+  line-height: 290%;
+  margin-left: 2%;
+  text-align: center;
+  position: relative;
+  display: inline-flexbox;
+  font-size: 24px;
+  color: white;
+  text-shadow: 0.3em 0.1em 1em rgba(0, 0, 0, 0.459);
+  vertical-align: middle;
+  height: 5%;
+  align-items: center;
+}
+.index_experiencia{
+  display: inline-flexbox;
+  text-align: center;
+  justify-content: center;
+  position: inherit;
+  margin-top:5%;
+}.index_contenedor_experiencia_alumnos2{
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+  height: 5%;  
+  flex-direction: row;
+
+  padding: 0px;
+  vertical-align: middle;
+  align-items: center;
+}
+.index_contenedor_experiencia_alumnos{
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+  height: 5%;  
+  flex-direction: row;
+
+  padding: 0px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.index_comillas{
+  position: relative;
+  font-size: 3em;
+  color:#ae2d19d7;
+
+}
+/*Fin del contenedor/seccion de quotes*/
+
+/** CONTENEDORES TARJETAS CLUBS */
+.index_slider_container{
+margin-top: -25px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  vertical-align: center;
+  overflow:scroll;
+}
+.index_slider_container::-webkit-scrollbar{
+background-color: rgba(0, 0, 0, 0.801);
+  width: 50%;
+  height: 15px;
+  display: double-button;
+}
+.index_slider_container::-webkit-scrollbar-thumb{
+background-color: rgba(255, 0, 0, 0.432);
+  border-radius: 4px;
+}
+.index_slider_container::-webkit-scrollbar-thumb:hover{
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.index_slider_container::-webkit-scrollbar-thumb:active{
+  background-color: #999999;
+}
+.index_slider_container::-webkit-scrollbar-button:horizontal:decrement{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 3px 4px 0px 0px;
+  
+}
+.index_slider_container::-webkit-scrollbar-button:horizontal:increment{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 3px 4px 0px 0px;
+  
+}
+.index_slider_container::-webkit-scrollbar-corner {
+background: #F2F2F2;
+border-top:1px solid #D9D9D9;
+border-left:1px solid #D9D9D9;
+}
+
+.index_bloque_contenedor_cartas{
+padding: 4em 3%;
+width: auto;
+background-color: rgba(0,0,0,0.8);
+
+}
+
+/*Inicio de la seccion de Actividades universitarias*/
+
+.index_actividades_universitarias{
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.index_proyecto_banner{
+
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+}
+
+#index_img_banner{
+  font-size: 34px;
+  line-height: 2;
+  letter-spacing: -0.045em;
+  font-weight: 100;
+  color: white;
+  text-shadow: 0.3em 0.1em 1em rgba(0, 0, 0, 0.884);
+  
+
+  background: url("logos/Imagenes/5. Index_Banner_Proyecto.jpg");
+  display: inline-flex;
+  text-align: left;
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 23vh;
+}
+
+
+.index_boxes{
+top: -6vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 23em;
+  position: relative;
+}
+.index_caja_contacta{
+  width: 55%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  padding: 3em
+  
+}
+.index_caja_contacta2{
+  width: 55%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  padding: 3em
+  
+}
+.index_caja_texto_contacta::-webkit-scrollbar{
+overflow-x: hidden;
+overflow-y: visible;
+}
+.index_caja_texto_contacta::-webkit-scrollbar:vertical{
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-flexbox;
+  height: 100%;
+}
+.index_caja_texto_contacta::-webkit-scrollbar-corner{
+background-color: rgba(0, 0, 0, 0);
+display: none;
+height: 0px;
+}
+.index_caja_texto_contacta::-webkit-scrollbar-thumb{
+background-color: rgba(255, 0, 0, 0.384);
+border-radius: 8px;
+}
+
+.index_caja_contacta  p{
+  position: relative;
+  font-size: large;
+  color: white;
+  line-break: initial;
+
+}
+.index_caja_contacta2  p{
+  position: relative;
+  font-size: large;
+  color: white;
+  line-break: initial;
+
+}
+
+.index_caja_texto_contacta > .caja_texto_contacta > p{
+font-size: 16px;
+width: 100%;
+}
+
+.index_caja_contacta  a{
+text-decoration: none;
+
+}
+.index_caja_contacta2  a{
+  text-decoration: none;
+  
+  }
+.index_caja_texto_contacta{
+height: 80%;
+overflow-y: auto;
+}
+
+
+#index_contacta_btn{
+border: 1px solid rgba(0, 0, 0, 0);
+
+padding-top: 1em;
+padding-right: 1em;
+padding-left: 1em;
+
+background-color: #FC2922;
+
+color: white;    
+border-style: none;
+border: none;    
+position: relative;
+bottom: -10%;
+
+}
+
+#index_contacta{
+position: relative;
+top: -0.4em;
+}
+#index_imagen_centro_AU{
+width:30%;
+padding: 0% 3%;
+}
+.index_container_imagenes_final{
+display: inline-flexbox;
+margin-top: 3%;
+flex-wrap: wrap;
+}
+.index_imagen_al_final{
+width: 30%;
+padding: 0% 1%;
+}
+#index_contacta_btn:hover{
+background-color: #fc29225e;
+border: 1px solid rgb(255, 255, 255);
+
+}
+/*Fin de seccion Actividades universitarias*/
+/*FOOTER*/
+
+
+.contenedorfooter {
+  position: relative;
+  width: 100%;
+  background-color: rgb(59, 53, 53);
+  display: inline-flex;
+  text-align: center;
+  padding-bottom: 15px;
+  bottom: 0;
+}
+.espaciosfooter {
+  padding-top: 1%;
+  width: 33%;
+}
+.logofooter {
+  width: 20%;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #fc2922;
+}
+.textofooter1 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.h3footer {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.textofooter2 {
+  position: relative;
+  color: white;
+  text-align: justify;
+  padding: 0% 10%;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Hellix-Regular";
+}
+.espaciosfooterG {
+  padding-top: 1%;
+  width: 33%;
+}
+.h3footerc {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.contactofooter {
+  text-decoration: none;
+  color: white;
+  font-family: "Hellix-Regular";
+}
+.imagenfooter {
+  height: 2.4em;
+  margin-bottom: 3px;
+}
+.galeriafooter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.columna {
+  margin: 0px 3px;
+  width: 25%;
+  height: 40%;
+}
+
+.redessociales {
+  display: inline-block;
+}
+.footer_icono_redes_sociales {
+  padding: 0% 3%;
+}
+
+.espaciosfooterfinal{
+  width: 33%;
+}
+@media screen and (max-width: 1000px) {
+  .contenedorfooter {
+    flex-wrap: wrap;
+    padding-top: 3%;
+  }
+  .espaciosfooterfinal{
+    visibility: hidden;
+    margin-top: -60%;
+  }
+  .espaciosfooter{
+    width: 100%;
+  }
+  .espaciosfooterG{
+    width: 100%;
+  }
+  .espaciosfooterfinal{
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding-top: 10%;
+  }
+}
+/*FIN FOOTER*/
+
+/* Inicio de responsive de la pagina principal */
+@media screen and (max-width: 530px) {
+  .index_decoracion2{
+display: none;
+  }
+  .index_contenedor_experiencia_alumnos{
+    justify-content: center;
+    text-align: center;
+    display: block;
+  }
+  .index_contenedor_experiencia_alumnos2{
+    justify-content: center;
+    text-align: center;
+    display: none;
+  }
+  .index_imagen_al_final{
+    padding-top: 20px;
+    width: 40%;
+  }
+  #index_imagen_centro_AU{
+    width:30%;
+    padding: 0% 3%;
+    display: none;}
+.index_slider_container{
+  height: 400px;
+  
+}
+.index_caja_contacta2{
+  display: none;
+}
+.index_galeriaclubs{
+  width: 100%;
+}
+.index_pExp{
+
+  font-size: 1px;
+  line-height: 45px;
+}
+.index_rubia_hermosa3{
+  border-radius: 190px;
+  width: 8%;
+  display: none;
+  
+}
+}
+
+@media screen and (max-width: 900px) {
+#index_img_banner{
+padding-bottom: 3%;
+}
+.index_contenedor_experiencia_alumnos{
+  display: inline-flexbox;
+  text-align: center;
+  justify-content: center;
+}
+.index_pExp{
+  font-size: 1.5em;
+}
+.index_rubia_hermosa{
+  width: 40%;
+}
+.index_rubia_hermosa3{
+  display: none;
+}
+.index_rubia_hermosa2{
+  border-radius: 190px;
+  width: 40%;
+  display: block;
+  
+}
+}

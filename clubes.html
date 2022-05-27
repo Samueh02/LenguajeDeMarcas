@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_junto.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <title>Clubs UE</title>
+  </head>
+
+  <body class="clubs_body">
+    <!-- BARRA DE NAVEGACIÓN -->
+    <div class="navegacion_container">
+      <header>
+        <nav>
+          <div class="navegacion_icon">
+            <img class= "test_index_2" src="img/navegacion_burger.png" />
+          </div>
+          <a href="index.html" class="navegacion_link_menu"><div class="navegacion_menu" >Inicio</div></a>
+          <a href="clubes.html" class="navegacion_link_menu"><div class="navegacion_menu">Clubs</div></a>
+          <a href="contacto.html" class="navegacion_link_menu"><div class="navegacion_menu">Contacto</div></a>
+          <a href="downloadAPP.html" class="navegacion_link_menu"><div class="navegacion_menu">App móvil</div></a>
+          <a href="login.html" class="navegacion_link_menu"><div class="navegacion_menu">Login</div></a>
+        </nav>
+      </header>
+    </div>
+    <div class="navegacion_logo">
+      <img class="navegacion_logouem" src="img/logo.svg" alt="" />
+    </div>
+
+    <!-- IMPORTANTE: COPIAR SCRIPT DEL HEAD-->
+    <script>
+      /* Icono del menu. Vamos a darle funcionalidad para hacer que se oculte o aparezca según el tamaño de la ventana */
+      $(function () {
+        /* Captura del evento para mostrar u ocultar el menu */
+        $(".navegacion_icon").click(function () {
+          $(".navegacion_menu").toggle();
+        });
+
+        $(window).resize(function () {
+          var anchura = $(this).width();
+          if (anchura > 900) {
+            $(".navegacion_menu").show();
+          }
+        });
+      });
+    </script>
+    <!-- FIN BARRA NAVEGACIÓN-->
+
+    <!-- VÍDEO PRESENTACIÓN DE FONDO -->
+    <div class="clubs_video">
+      <div class="clubs_app_cortina">
+        <div class="clubs_presentacion">DESCUBRE TODOS LOS CLUBS</div>
+      </div>
+      <video
+        src="videos/ClubsPresentacion.mp4"
+        autoplay
+        class="clubs_videoGrande"
+        loop
+        muted
+      ></video>
+    </div>
+
+    <!-- PRESENTACION CLUBS TECNOLOGÍA -->
+    <div class="clubs_banners_1">
+      <p>CLUBS DE TECNOLOGÍA</p>
+    </div>
+    <!-- CLUBS TECNOLOGÍA -->
+    <div class="clubs_cuerpo">
+      <!-- CLUB TECNOLOGÍA 1 -->
+      <div class="clubs_tarjetas" id="clubs_6">
+        <div class="clubs_titulo">
+          <h3><a href="#">Club ROBOTICS</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #ROBÓTICA </span>
+            <span id="clubs_segundo"> #INGENIERÍA </span>
+            <span id="clubs_tercero"> #CONCURSOS</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Club ROBOTICS</h3>
+          <p>
+            Creamos desde cero sistemas robóticos así como el manejo de sistemas
+            ya desarrollados. Participamos en concursos de robótica como el ASTI
+            Challenge, proyectos independientes como el Robot Araña, etc.
+          </p>
+          <a href="pagdeunclub.html"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>clubroboticsuem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB TECNOLOGÍA 2 -->
+      <div class="clubs_tarjetas" id="clubs_11">
+        <div class="clubs_titulo">
+          <h3><a href="#">CriptoClub</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #CRIPTOS </span>
+            <span id="clubs_segundo"> #BLOCKCHAIN</span>
+            <span id="clubs_tercero"> #METAVERSE</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>CriptoClub</h3>
+          <p>
+            Queremos explorar el potencial que tiene la tecnologia del
+            blockchain y la descentralización para cambiar la economia tal y
+            como la conocemos. Estudia lo aspectos fundamentales e importantes
+            relacionados con la economía descentralizada para mejorar la toma de
+            decisiones.
+          </p>
+          <a href="pagdeunclub.html"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB TECNOLOGÍA 3 -->
+      <div class="clubs_tarjetas" id="clubs_1">
+        <div class="clubs_titulo">
+          <h3><a href="#">Game Studio 2.0</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #E-SPORTS </span>
+            <span id="clubs_segundo"> #INFORMÁTICA </span>
+            <span id="clubs_tercero"> #ARTE</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Game Studio 2.0</h3>
+          <p>
+            Unimos arte, diseño y programación para la creación de videojuegos.
+            Organizamos cursos de programación con Gamemaker, game jams, torneos
+            de e-sports, etc.
+          </p>
+          <a href="pagdeunclub.html"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>uegamestudio@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB TECNOLOGÍA 4 -->
+      <div class="clubs_tarjetas" id="clubs_12">
+        <div class="clubs_titulo">
+          <h3><a href="#">UEM E-Sports</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #VIDEOJUEGO </span>
+            <span id="clubs_segundo"> #SOCIAL</span>
+            <span id="clubs_tercero"> #COMPETICION</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>UEM E-Sports</h3>
+          <p>
+            Nos apasionan los deportes electrónicos y queremos ofrecer a la
+            comunidad de la Universidad Europea de Madrid eventos y competencias
+            de e-sports. Nos definimos como unos "frikis" que se reúnen para
+            jugar a videojuegos en comunidad.
+          </p>
+          <a href="pagdeunclub.html"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>UEMesports@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB TECNOLOGÍA 5 -->
+      <div class="clubs_tarjetas" id="clubs_21">
+        <div class="clubs_titulo">
+          <h3><a href="#">Club Informática</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #INFORMÁTICA </span>
+            <span id="clubs_segundo"> #CIENCIA</span>
+            <span id="clubs_tercero"> #DRONES</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Club Informática</h3>
+          <p>
+            Somos un club multidisciplinar basado en proyectos de nuevas
+            tecnologías como loT Cloud, drones, etc., además de los propios de
+            la informática y la programación.
+          </p>
+          <a href="pagdeunclub.html"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>cint.uem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB TECNOLOGÍA 6 -->
+      <div class="clubs_tarjetas" id="clubs_7">
+        <div class="clubs_titulo">
+          <h3><a href="#">Club Air Division</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #DRON </span>
+            <span id="clubs_segundo"> #INGENIERIA </span>
+            <span id="clubs_tercero"> #AERONÁUTICA</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Fórmula UEM</h3>
+          <p>
+            Diseñamos y fabricamos drones,. y actualmente estamos preparando el
+            lanzamiento del satélite a través del proyecto PicoSat mediante
+            colaboradores. Visitamos centros del sector aeronáutico y
+            aeroespacial.
+          </p>
+          <a href="pagdeunclub.html"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>clubroboticsuem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+    </div>
+
+    <!-- PRESENTACION CLUB DEPORTE -->
+    <div class="clubs_banners_2">
+      <p>CLUBS DE DEPORTES</p>
+    </div>
+
+    <!-- TARJETAS DE CLUBS DEPORTE-->
+    <div class="clubs_cuerpo">
+      <!-- CLUB DEPORTE 1 -->
+      <div class="clubs_tarjetas" id="clubs_4">
+        <div class="clubs_titulo">
+          <h3><a href="#">Fórmula UEM</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #COCHES </span>
+            <span id="clubs_segundo"> #INGENIERIA </span>
+            <span id="clubs_tercero"> #COMPETICION</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Fórmula UEM</h3>
+          <p>
+            El equipo está formado por estudiantes de ingenieria, diseño,
+            marketing, negocios... interesados en el mundo del motorsport y que
+            están buscando un reto. Trabajamos en el diseño y fabricación de un
+            monoplaza para competir contra otras universidades tanto a nivel
+            nacional como internacional.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>teamleader@formulauem.es</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB DEPORTE 2 -->
+      <div class="clubs_tarjetas" id="clubs_23">
+        <div class="clubs_titulo">
+          <h3><a href="#">Running Club</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #DEPORTE </span>
+            <span id="clubs_segundo"> #RUNNING</span>
+            <span id="clubs_tercero"> #COMPETICIÓN</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Running Club</h3>
+          <p>
+            Si te apasiona correr, quieres ponerte en forma y conocer gente,
+            ieste es tu club! Podrás disfrutar de entrenamientos semanales
+            guiados por un instructor de running titulado. Entrena con nosotros,
+            consigue dorsales en carreras seleccionadas y tu equipamiento
+            deportivo de la Universidad Europea de Valencia.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB DEPORTE 3 -->
+      <div class="clubs_tarjetas" id="clubs_24">
+        <div class="clubs_titulo">
+          <h3><a href="#">Workout Valencia</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #DEPORTE </span>
+            <span id="clubs_segundo"> #GYM</span>
+            <span id="clubs_tercero"> #COMPETICIÓN</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Workout Valencia</h3>
+          <p>
+            Para los que no pueden estar quietos. Entrenamientos semanales para
+            todas las edades y todos los niveles, lo importante es que tengas
+            ganas de estar en forma y de pasarlo bien al aire libre, y sin
+            necesidad de equipamiento.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB DEPORTE 4 -->
+      <div class="clubs_tarjetas" id="clubs_14">
+        <div class="clubs_titulo">
+          <h3><a href="#">Chess Club</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #AJEDREZ </span>
+            <span id="clubs_segundo"> #COMPETICION</span>
+            <span id="clubs_tercero"> #SOCIAL</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Chess Club</h3>
+          <p>
+            No importa si llevas mucho tiempo jugando al ajedrez o si quieres
+            aprender, en el Chess Club queremos unir a todos los estudiantes
+            entornoa este juego. Forma parte de nuestro club y te la oportunidad
+            de compartir con estudiantes de todas las titulaciones mientras
+            desarrollas tus habilidades con el ajedrez.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>chessclubue@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB DEPORTE 4 -->
+      <div class="clubs_tarjetas" id="clubs_25">
+        <div class="clubs_titulo">
+          <h3><a href="#">Club Real Madrid</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #FUTBOL </span>
+            <span id="clubs_segundo"> #CHAMPIONS</span>
+            <span id="clubs_tercero"> #13</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Club Real Madrid</h3>
+          <p>
+            Historia que tú hiciste, historia por hacer. Club que representa al
+            Real Madrid en la Universidad Europea. Entra en el equipo más
+            prestigioso de cualquier universidad.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>realmadrid@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+    </div>
+
+    <!-- PRESENTACION CLUBS SALUD-->
+    <div class="clubs_banners_3">
+      <p>CLUBS DE CIENCIAS Y SALUD</p>
+    </div>
+    <!-- CLUBS SALUD -->
+    <div class="clubs_cuerpo">
+      <!-- CLUB SALUD 1 -->
+      <div class="clubs_tarjetas" id="clubs_2">
+        <div class="clubs_titulo">
+          <h3><a href="#">BDE Kinespaña</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #FISIOTERAPIA </span>
+            <span id="clubs_segundo"> #DEPORTE </span>
+            <span id="clubs_tercero"> #SOCIAL</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>BDE Kinespaña</h3>
+          <p>
+            Queremos ser parte de la integración de los nuevos y futuros
+            estudiantes de Fisioterapia, a través de diversas actividades
+            recreativas y eventos deportivos. Nuestro objetivo es ayudar a los
+            estudiantes en Su paso por la universidad y que se sientan el
+            orgullo de ser parte de la Universidad Europea de Madrid.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>bde.kinespana.uem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SALUD 2 -->
+      <div class="clubs_tarjetas" id="clubs_9">
+        <div class="clubs_titulo">
+          <h3><a href="#">Asociación de Odontología</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #SOCIAL </span>
+            <span id="clubs_segundo"> #ODONTOLOGÍA</span>
+            <span id="clubs_tercero"> #CHARLAS</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Asociación de Odontología</h3>
+          <p>
+            Por y para los estudiantes. Queremos proporcionar conocimientos,
+            experiencias y ser un punto de encuentro para los estudiantes de
+            Odontología de la Universidad Europea de Madrid.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>asociacionodonologiauem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SALUD 3 -->
+      <div class="clubs_tarjetas" id="clubs_18">
+        <div class="clubs_titulo">
+          <h3><a href="#">AEMUEM</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #MEDICINA </span>
+            <span id="clubs_segundo"> #PROYECTOS</span>
+            <span id="clubs_tercero"> #CHARLAS</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>AEMUEM</h3>
+          <p>
+            iUnete a la Asociación de Estudiantes de Medicina UEM! Si estudias
+            Medicina y quieres relacionarte con otros estudiantes de tu Facultad
+            fuera de las clases, con proyectosyactividades que te interesen.
+            Además, la Asociación representa tu voz y tu opinión.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>aemuem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SALUD 4 -->
+      <div class="clubs_tarjetas" id="clubs_19">
+        <div class="clubs_titulo">
+          <h3><a href="#">UEPSA</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #PSICOLOGIA </span>
+            <span id="clubs_segundo"> #CINE</span>
+            <span id="clubs_tercero"> #JUEGOS</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>UEPSA</h3>
+          <p>
+            En la Universidad Europea Psychology Student Association, nuestro
+            objetivo es promover la salud mental y combatir el estigma de las
+            enfermedades mentales. Para fomentar la relación entre los miembros,
+            organizamos debates y otras actividades sociales como cinefórums y
+            picnics en el parque.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>uepsa.uem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SALUD 5 -->
+      <div class="clubs_tarjetas" id="clubs_22">
+        <div class="clubs_titulo">
+          <h3><a href="#">DentaLife</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #ODONTOLOGÍA </span>
+            <span id="clubs_segundo"> #MEDICINA</span>
+            <span id="clubs_tercero"> #SOCIAL</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>DentaLife</h3>
+          <p>
+            DentaLife es un club dedicado a la vida estudiantil de los futuros
+            dentistas de la UEM. Nuestro objetivo es promover la cohesión de los
+            estudiantes mediante la creación de eventos festivos, culturales y
+            deportivos.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>dentalifeUEM@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SALUD 6 -->
+      <div class="clubs_tarjetas" id="clubs_10">
+        <div class="clubs_titulo">
+          <h3><a href="#">PhysX</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #FÍSICA </span>
+            <span id="clubs_segundo"> #CIENCIA</span>
+            <span id="clubs_tercero"> #TALLERES</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>PhysX</h3>
+          <p>
+            Somos un club que se enfrenta a retos enfocados al área de la física
+            e intentar darles sentido a los datos obtenidos, no tenemos límites,
+            actualmente estamos reconstruyendo una caseta meteorológica, también
+            estamos con la construcción de un contador Geiger.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>physxclub@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SALUD 7 -->
+      <div class="clubs_tarjetas" id="clubs_20">
+        <div class="clubs_titulo">
+          <h3><a href="#">Club de Ciencias</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #CIENCIA </span>
+            <span id="clubs_segundo"> #TALLER</span>
+            <span id="clubs_tercero"> #SOCIAL</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Club de Ciencia</h3>
+          <p>
+            Preparamos actividades, talleres e iniciativas relacionadas con el
+            mundo de la ciencia. Es un lugar donde promovemos las aplicaciones
+            de las Ciencias y desarrollamos nuevas habilidades de una forma
+            divertida y amena.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>clubcienciasuem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+    </div>
+
+    <!-- PRESENTACION CLUBS SOCIAL-->
+    <div class="clubs_banners_4">
+      <p>CLUBS SOCIALES</p>
+    </div>
+    <!-- CLUBS SOCIAL -->
+    <div class="clubs_cuerpo">
+      <!-- CLUB SOCIAL 1 -->
+      <div class="clubs_tarjetas" id="clubs_3">
+        <div class="clubs_titulo">
+          <h3><a href="#">Club MUN</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #INTERNACIONAL </span>
+            <span id="clubs_segundo"> #DERECHO </span>
+            <span id="clubs_tercero"> #SOCIAL</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Club MUN</h3>
+          <p>
+            Queremos crear un espacio universitario donde los estudiantes del
+            mundo puedan poner en práctica las teorías aprendidas en clasesy las
+            teorías metodológicas de las relaciones internacionales, a través de
+            Modelos de Naciones Unidas y distintos organismos globales.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>uemunclub@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SOCIAL 2 -->
+      <div class="clubs_tarjetas" id="clubs_5">
+        <div class="clubs_titulo">
+          <h3><a href="#">Pride UE</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #LGTBIQ+ </span>
+            <span id="clubs_segundo"> #SOCIAL </span>
+            <span id="clubs_tercero"> #TALLER</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Pride UE</h3>
+          <p>
+            Si estás buscando un espacio dónde aprender, compartir y vivir
+            experiencias dentro de la comunidad LGTBIQ+, este es tu club.
+            Nuestro objetivo principal es crear un espacio abierto para todas
+            aquellas personas que sean del colectivo, lo apoyen o simplemente
+            quieran conocerlo más.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>lgtbuem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SOCIAL 3 -->
+      <div class="clubs_tarjetas" id="clubs_8">
+        <div class="clubs_titulo">
+          <h3><a href="#">Club de Rol</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #SOCIAL </span>
+            <span id="clubs_segundo"> #NARRACIÓN</span>
+            <span id="clubs_tercero"> #JUEGOS</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Club de Rol</h3>
+          <p>
+            Un espacio donde puedes reforzar tu creatividad y tus capacidades de
+            improvisación a la vez que aprendes competencias relacionadas con el
+            ambiente narrativo y de diseño encontrado en diversos estudios de
+            videojuegos. Organizamos diversos talleres y partidas de rol.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>clubderol.uem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SOCIAL 4 -->
+      <div class="clubs_tarjetas" id="clubs_13">
+        <div class="clubs_titulo">
+          <h3><a href="#">Club de Teatro</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #ACTUAR </span>
+            <span id="clubs_segundo"> #SOCIAL</span>
+            <span id="clubs_tercero"> #TEATRO</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Club de Teatro</h3>
+          <p>
+            Te apasiona la actuación? ¿Quieres descubriro desarrollar tus
+            talentos? Sé parte del Club de Teatro y vive la experiencia de
+            representar una obra. Cada semana aprenderás lo que ocurre en el
+            proceso de montaje de una obra de teatro y la experiencia desde el
+            punto de vista de los actores.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>clubdeteatrouem@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SOCIAL 6 -->
+      <div class="clubs_tarjetas" id="clubs_15">
+        <div class="clubs_titulo">
+          <h3><a href="#">Club de Fotografía</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #FOTOS </span>
+            <span id="clubs_segundo"> #GUIONES</span>
+            <span id="clubs_tercero"> #AUDIOVISUAL</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>Club de Fotografía</h3>
+          <p>
+            Si te interesa la fotografía, la creación de videos, la escritura de
+            guiones o incluso el manejo de drones con fines audiovisuales, este
+            es tu club. Somos un grupo de estudiantes con interés en aprender y
+            poner en práctica conocimientos sobre el mundo audiovisual.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SOCIAL 7 -->
+      <div class="clubs_tarjetas" id="clubs_16">
+        <div class="clubs_titulo">
+          <h3><a href="#">IRClub</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #INTERNACIONAL </span>
+            <span id="clubs_segundo"> #SOCIAL</span>
+            <span id="clubs_tercero"> #DEBATE</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>IRClub</h3>
+          <p>
+            En el Club de Relaciones Internacionales, somos un grupo diverso de
+            estudiantes de diferentes partes del mundo, que nos hemos reunido
+            por nuestro gran interés en las Relaciones Internacionales.
+            Realizamos entrevistas en directo en Instagram, debates...
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>irclubue@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+
+      <!-- CLUB SOCIAL 8 -->
+      <div class="clubs_tarjetas" id="clubs_17">
+        <div class="clubs_titulo">
+          <h3><a href="#">UECC</a></h3>
+          <div class="clubs_hashtags">
+            <span id="clubs_primero"> #CINE </span>
+            <span id="clubs_segundo"> #SOCIAL</span>
+            <span id="clubs_tercero"> #PSICOLOGIA</span>
+          </div>
+        </div>
+        <div class="clubs_card_info">
+          <h3>UECC</h3>
+          <p>
+            ¡Hablemos de cine! El objetivo del Universidad Europea Cinema Club
+            es llegar a conocer más sobre el séptimo arte y compartir ideas
+            sobre películas desde diversos enfoques como la filosofia, la
+            cinematografía, la psicología, etc. Es un entorno en el que
+            debatimos e intercambiamos nuestras perspectivas sobre el tema.
+          </p>
+          <a href="#"
+            >APÚNTATE<span class="licon icon-arr icon-black"></span
+          ></a>
+          <div class="clubs_utility_info">
+            <ul class="clubs_utility_list">
+              <li>
+                <span class="licon icon-tag"></span
+                ><img
+                  src="https://img.icons8.com/windows/32/000000/gmail.png"
+                />
+                <p>uecinemaclub@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clubs_gradient_overlay"></div>
+        <div class="clubs_color_overlay"></div>
+      </div>
+      <!-- FIN TARJETA -->
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="contenedorfooter">
+        <div class="espaciosfooter">
+          <img class="logofooter" src="/img/logo.svg" alt="" />
+          <p class="textofooter1">
+            Lorem, ipsum asdasdasdadadasdasdasdasdolor sit amet consectetur
+            adipisicing elit. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptates temporibus quidem deserunt corporis
+            vero blanditiis earu
+          </p>
+          <br />
+
+          <h3 class="h3footer">¿Necesitas ayuda?</h3>
+          <br />
+          <p class="textofooter2">
+            Dejamos a tu disposicion nuestra pagina de
+            <a class="contactofooter" href="#">contacto</a> para cualquier duda,
+            sugerencia o inquietud que podamos resolver para los usuarios de
+            nuestra plataforma, ¡no dudes en contactarnos!
+          </p>
+        </div>
+        <div class="espaciosfooterG">
+          <br />
+          <h3 class="h3footerc">Clubes de interés</h3>
+          <br />
+          <div class="galeriafooter">
+            <div class="columna">
+              <img
+                class="imagenfooter"
+                src="/logos/LOGOS/VECTORIZADOS/phyxs-logo-club-madrid-400x225.svg"
+                alt=""
+              />
+              <img
+                class="imagenfooter"
+                src="/logos/LOGOS/VECTORIZADOS/pride.svg"
+                alt=""
+              />
+            </div>
+            <div class="columna">
+              <img
+                class="imagenfooter"
+                src="/logos/LOGOS/VECTORIZADOS/ue-e-sports-group.svg"
+                alt=""
+              />
+              <img
+                class="imagenfooter"
+                src="/logos/LOGOS/VECTORIZADOS/robotics.svg"
+                alt=""
+              />
+            </div>
+            <div class="columna">
+              <img
+                class="imagenfooter"
+                src="/logos/LOGOS/VECTORIZADOS/club-teatro-la-tarantella-uem-logo.svg"
+                alt=""
+              />
+              <img
+                class="imagenfooter"
+                src="/logos/LOGOS/VECTORIZADOS/cludeciencias3.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <h3 class="h3footer">Redes Sociales</h3>
+          <br /><br />
+          <div class="footer_redescociales">
+            <img
+              src="/logos/LOGOS/redes sociales/linkedin.png"
+              alt=""
+              class="footer_icono_redes_sociales"
+            />
+            <img
+              src="/logos/LOGOS/redes sociales/instagram.png"
+              alt=""
+              class="footer_icono_redes_sociales"
+            />
+            <img
+              src="/logos/LOGOS/redes sociales/facebook.png"
+              alt=""
+              class="footer_icono_redes_sociales"
+            />
+            <img
+              src="/logos/LOGOS/redes sociales/gorjeo.png"
+              alt=""
+              class="footer_icono_redes_sociales"
+            />
+            <img
+              src="/logos/LOGOS/redes sociales/youtube.png"
+              alt=""
+              class="footer_icono_redes_sociales"
+            />
+          </div>
+        </div>
+
+        <div class="espaciosfooterfinal">
+          <h3 class="h3footer">Etiquetas</h3>
+          <br />
+          <p class="textofooter2">
+            #Diseño #Interiores #Exteriores #FotoRealismo #3d #ArchViz
+            #Arquitectura #VisualizaciónArquitectónica #Entornos #Render
+            #Infografías #VisitaVirtual #Retail #Plantas 3d #ObraCivil
+            #ObraPública
+          </p>
+          <br />
+
+          <h3 class="h3footer">Aviso legal</h3>
+          <br />
+          <p class="textofooter2">
+            Ante cualquier inquietud no dudes en consultas nuestras paginas
+            sobre
+            <a href="#" class="contactofooter"
+              >Condiciones y politicas de privacidad</a
+            >
+          </p>
+        </div>
+      </div>
+      <br />
+    </footer>
+  </body>
+</html>
